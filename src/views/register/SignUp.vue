@@ -62,7 +62,7 @@
                     </div>
                         <div class="np-password-hint">
                             <span class="">Strong password must contain at least 8 characters, </span>
-                            <span class="">digits, and upper case.</span>
+                            <span class="">digits, upper case and symbols.</span>
                         </div>
                     </div>
                     </div>
@@ -72,9 +72,9 @@
                     <div class="field">
                       <a class="ssolink" href="#">
                         Don’t have an account?
-                        <nuxt-link to="/Register/SignUp">
+                        <router-link to="/signin">
                           Log in
-                        </nuxt-link>
+                        </router-link>
                       </a>
                     </div>
                   </form>

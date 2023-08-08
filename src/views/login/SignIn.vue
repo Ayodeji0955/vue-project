@@ -31,7 +31,11 @@
                     </div>
                   </div>
                   <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
-                    <a class="ssolink" href="#">Forgot password?</a>
+                    <a class="ssolink" href="#">
+                      <router-link to="/ForgotPassword">
+                        Forgot password?
+                      </router-link>
+                    </a>
                   </div>
                   <div class="field padding-bottom--24">
                     <input type="submit" name="submit" value="Sign in">
@@ -39,9 +43,9 @@
                   <div class="field">
                     <a class="ssolink" href="#">
                       Don’t have an account?
-                      <nuxt-link to="/Register/SignUp">
+                      <router-link to="/SignUp">
                         Sign up
-                      </nuxt-link>
+                      </router-link>
                     </a>
                   </div>
                 </form>

@@ -1,42 +1,42 @@
 <template>
-    <div class="forgot">
-      <div class="row align-items-center">
-        <div class="col-md-6 login__main-col">
-          <div class="container py-4">
-            <div class="formbg-outer">
-              <div class="formbg">
-                <div class="formbg-inner padding-horizontal--48">
-                  <div class=" text-center py-5">
-                    <img src="~@/assets/images/img_1/favicon.png">
-                  </div>
-                  <h1 class="padding-bottom--12 text-center">
-                    Forgot password?
-                  </h1>
-                  <span class="padding-bottom--15 text-center">No worries, we'll send reset instructions to you.</span>
-                  <form id="stripe-login">
-                    <div class="field padding-bottom--24 py-4">
-                      <label for="email">Enter email address</label>
-                      <input type="email" name="email">
-                    </div>
-                    <div class="field padding-bottom--24">
-                      <input type="submit" name="submit" value="Next">
-                    </div>
-                    <div class="text-center link">
-                      <nuxt-Link to="/Register/SignUp">
-                        Back to login
-                      </nuxt-link>
-                    </div>
-                  </form>
+  <div class="forgot">
+    <div class="row align-items-center">
+      <div class="col-md-6 login__main-col">
+        <div class="container py-4">
+          <div class="formbg-outer">
+            <div class="formbg">
+              <div class="formbg-inner padding-horizontal--48">
+                <div class=" text-center py-5">
+                  <img src="~@/assets/images/img_1/favicon.png">
                 </div>
+                <h1 class="padding-bottom--12 text-center">
+                  Forgot password?
+                </h1>
+                <span class="padding-bottom--15 text-center">No worries, we'll send reset instructions to you.</span>
+                <form id="stripe-login">
+                  <div class="field padding-bottom--24 py-4">
+                    <label for="email">Enter email address</label>
+                    <input type="email" name="email">
+                  </div>
+                  <div class="field padding-bottom--24">
+                    <input type="submit" name="submit" value="Next">
+                  </div>
+                  <div class="text-center link">
+                    <nuxt-Link to="/Register/SignUp">
+                      Back to login
+                    </nuxt-link>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 login__sub-col" />
       </div>
+      <div class="col-md-6 login__sub-col" />
     </div>
+  </div>
 </template>
-  
+
 <script lang="ts">
 
 </script>
@@ -122,24 +122,6 @@ justify-content: center;
     margin: 0 -2%;
     transform: rotate(-12deg) skew(-12deg);
 }
-// .box-divider--light-all-2 {
-//     box-shadow: inset 0 0 0 2px #e3e8ee;
-// }
-// .box-background--blue {
-//     background-color: #5469d4;
-// }
-// .box-background--white {
-//   background-color: #ffffff;
-// }
-// .box-background--blue800 {
-//     background-color: #212d63;
-// }
-// .box-background--gray100 {
-//     background-color: #e3e8ee;
-// }
-// .box-background--cyan200 {
-//     background-color: #7fd3ed;
-// }
 .padding-top--64 {
 padding-top: 4rem;
 }
