@@ -58,7 +58,7 @@
 .login {
 
 &__sub-col {
-    background-image: url('~@/assets/images/img_1/wrk.png');
+    background-image: url('@/assets/images/img_1/wrk.png');
     background-position:center;
     background-size:cover;
     height: 100vh;

@@ -1,5 +1,5 @@
 <template>
-     <div class="login">
+  <div class="login">
     <div class="row align-items-center">
       <div class="col-md-6 login__main-col">
         <div class="container py-4">
@@ -22,17 +22,21 @@
                     <div class="grid--50-50">
                       <label for="password">Password</label>
                     </div>
-                    <!-- <password v-model="password" :show-password="show" :badge="false" :toggle="true" /> -->
                     <div class="">
-                      <!-- <input v-if="showPassword" v-model="password" type="password" name="password"> -->
+                      <input 
+                        type="password" 
+                        name="password"
+                        placeholder="Enter password"
+                        :password="password"
+                      >
 
                       <!-- @click="toggleShow"><span class="icon is-small is-right">
                       <i class="fas" :class="{ 'fa-eye-slash': showPassword, 'fa-eye': !showPassword }"></i>
                     </span>
                       <i -->
-                      <span class="icon is-small is-right">
-                        <!-- <i class="showPassword ? 'fa-regular fa-eye' : 'fa-regular fa-eye-slash'" @click="toggleShow" /> -->
-                      </span>
+                      <!-- <span class="icon is-small is-right">
+                        <i class="showPassword ? 'fa-regular fa-eye' : 'fa-regular fa-eye-slash'" @click="toggleShow" />
+                      </span> -->
                     </div>
                   </div>
                   <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
@@ -76,13 +80,19 @@
 
 .login {
 
-&__sub-col {
-  background-image: url('~@/assets/images/img_1/wrk.png');
-  background-position:center;
-  background-size:cover;
-  // padding-top: 7rem;
-  height: 100vh;
-}
+  &__sub-col {
+    background-image: url("@/assets/images/img_1/wrk.png");
+    background-position: center;
+    background-size:cover;
+    // padding-top: 7rem;
+    height: 100vh;
+
+    // &--imgs {
+    //   height: 100vh;
+    //   width: 100vh;
+    //   position: cover;
+    // }
+  }
 
 }
 
