@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <RouterView />
   </div>
+  <RouterView />
 </template>
 
 <script setup lang="ts">
@@ -13,8 +13,8 @@ import { RouterView } from 'vue-router'
 @import "@/sass/variable.scss";
 @import "@/sass/mixin.scss";
 
-.body {
-  margin: 100vh;
-}
+// .body {
+//   margin: 100vh;
+// }
 
 </style>
