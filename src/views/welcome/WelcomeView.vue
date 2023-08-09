@@ -1,12 +1,12 @@
 <template>
     <div class="welcome">
         <div class="container welcome__container">
-            <div class="welcome__content text-center">
+            <div class="welcome__content text-center pb-4">
                 <img src="~@/assets/images/img_1/favicon.png" alt="" class="welcome__content--img">
-                <h1 class="welcome__content--txt">Welcome to Venture Nation!</h1>
-                <p class="welcome__content--sub-txt">We’re glad you’re here. Choose your path to get started</p>
+                <h1 class="welcome__content--txt pt-4">Welcome to Venture Nation!</h1>
+                <p class="welcome__content--sub-txt pt-2">We’re glad you’re here. Choose your path to get started</p>
             </div>
-            <div class="row welcome__row justify-content-center">
+            <div class="row welcome__row align-items-center pt-4">
                 <div class="col-md-6 welcome__col">
                     <div class="">
                         <img src="~@/assets/images/img_1/industry.png" alt="" class="welcome__col--img">
@@ -53,11 +53,15 @@
 //     height: 100vh;
 // }
 .welcome {
-//   background-color: white;
-//   height: 100vh;
-  padding-bottom: 2rem;
+  background-color: white;
+  background-position: center;
+  background-size:cover;
+  height: 100vh;
+  padding-top: 4rem;
 
   &__col {
+    border-radius: 2rem;
+    // padding-top: 4rem;
 
     &--sub-col-txt {
         display: inline-block;
