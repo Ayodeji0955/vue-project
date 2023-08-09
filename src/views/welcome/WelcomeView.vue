@@ -18,7 +18,9 @@
                         <span class="welcome__col--sub-col-txt">to grow your business. No matter what stage you</span>
                         <span class="welcome__col--sub-col-txt">are in, there is something made just for you.</span>
                     </p>
-                    <button class=""></button>
+                    <div class="field padding-bottom--24 pt-3">
+                      <input type="submit" name="submit" value="Continue as a Venture Owner">
+                    </div>
                 </div>
                 <div class="col-md-4 welcome__sub-col">
                     <div class="">
@@ -31,7 +33,9 @@
                         <span class="welcome__col--sub-col-txt">businesses with the offerings, expertise, support,</span>
                         <span class="welcome__col--sub-col-txt">tools, and resources, you bring to the table.</span>
                     </p>
-                    <button class=""></button>
+                    <div class="field padding-bottom--24 pt-3">
+                      <input type="submit" name="submit" value="Continue as an ESP">
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,6 +97,31 @@
 
 }
 
+.field input {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: linear-gradient(90.73deg, #5A27D5 0%, #5F27D3 32.36%, #AE2EC4 100%);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(90.73deg, #5A27D5 0%, #5F27D3 32.36%, #AE2EC4 100%);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 body {
     min-height: 100vh;
