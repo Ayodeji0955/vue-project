@@ -1,12 +1,12 @@
 <template>
     <div class="welcome">
-        <div class="welcome__container">
-            <div class="welcome__content text-center">
+        <div class="welcome__container text-center">
+            <div class="welcome__content">
                 <img src="~@/assets/images/img_1/favicon.png" alt="" class="welcome__content--img">
                 <h1 class="welcome__content--txt">Welcome to Venture Nation!</h1>
                 <p class="welcome__content--sub-txt">We’re glad you’re here. Choose your path to get started</p>
             </div>
-            <div class="row welcome__row">
+            <div class="row welcome__row align-items-center">
                 <div class="col welcome__col">
                     <img src="~@/assets/images/img_1/industry.png" alt="" class="welcome__col--img">
                     <h1 class="welcome__col--txt"></h1>
@@ -24,7 +24,7 @@
     </div>
 </template>
   
-<script lang="ts">
+<script setup lang="ts">
 
 
 </script>
@@ -34,4 +34,15 @@
 @import "@/sass/mixin.scss";
 
 
+// .welcome {
+//   background-color: white;
+//   height: 100vh;
+// }
+
+
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+}
 </style>
