@@ -53,18 +53,18 @@
 //     height: 100vh;
 // }
 .welcome {
-  background-color: white;
-  background-position: center;
-  background-size:cover;
-  height: 100vh;
-  padding-top: 4rem;
+    background-color: white;
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    padding-top: 4rem;
 
   &__col {
-    padding: 0.5rem 0rem;
-    background-color: #FFFFFF;
-    box-shadow: 00 0 50px #ccc;
-    border-radius: 0.938rem;
-    padding: 1.5rem;
+        padding: 0.5rem 0rem;
+        background-color: #FFFFFF;
+        box-shadow: 00 0 50px #ccc;
+        border-radius: 0.938rem;
+        padding: 1.5rem;
 
     &--sub-col-txt {
         display: inline-block;
@@ -73,7 +73,7 @@
     &--txt {
         display: inline-block;
         font-size: 1.25rem;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
     }
     &--img {
         padding: 1rem 0;
