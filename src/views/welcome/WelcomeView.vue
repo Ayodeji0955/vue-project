@@ -6,8 +6,8 @@
                 <h1 class="welcome__content--txt pt-4">Welcome to Venture Nation!</h1>
                 <p class="welcome__content--sub-txt pt-2">We’re glad you’re here. Choose your path to get started</p>
             </div>
-            <div class="row welcome__row align-items-center pt-4">
-                <div class="col-md-6 welcome__col">
+            <div class="row welcome__row justify-content-evenly pt-4">
+                <div class="col-md-4 welcome__col">
                     <div class="">
                         <img src="~@/assets/images/img_1/industry.png" alt="" class="welcome__col--img">
                     </div>
@@ -20,7 +20,7 @@
                     </p>
                     <button class=""></button>
                 </div>
-                <div class="col-md-6 welcome__sub-col">
+                <div class="col-md-4 welcome__sub-col">
                     <div class="">
                         <img src="~@/assets/images/img_1/teach.png" alt="" class="welcome__col--img">
                     </div>
@@ -60,8 +60,11 @@
   padding-top: 4rem;
 
   &__col {
-    border-radius: 2rem;
-    // padding-top: 4rem;
+    padding: 0.5rem 0rem;
+    background-color: #FFFFFF;
+    box-shadow: 00 0 50px #ccc;
+    border-radius: 0.938rem;
+    padding: 1.5rem;
 
     &--sub-col-txt {
         display: inline-block;
@@ -77,6 +80,14 @@
         width: 3.375rem;
     }
 
+  }
+
+  &__sub-col {
+    padding: 0.5rem 0rem;
+    background-color: #FFFFFF;
+    box-shadow: 00 0 50px #ccc;
+    border-radius: 0.938rem;
+    padding: 1.5rem;
   }
 
 
