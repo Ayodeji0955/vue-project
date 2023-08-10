@@ -52,16 +52,34 @@
 @import "@/sass/mixin.scss";
 
 
-// body {
-//     margin: 0;
-//     height: 100vh;
-// }
 .welcome {
-    background-color: white;
-    background-position: center;
-    background-size:cover;
-    height: 100vh;
-    padding-top: 4rem;
+    
+    &__container {
+    //   background-color: white;
+    //   background-position: center;
+    //   background-size:cover;
+    //   height: 100vh;
+      padding-top: 4rem;
+
+  }
+
+  &__content {
+    
+    padding-top: 2rem;
+
+    &--img {
+        width: 3.063rem;
+    }
+    
+    &--txt {
+        font-size: 1.5rem;
+        padding: 0 0;
+    }
+
+    &--sub-txt {
+        font-size: 1rem;
+    }
+  }
 
   &__col {
         padding: 0.5rem 0rem;
