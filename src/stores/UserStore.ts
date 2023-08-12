@@ -1,17 +1,20 @@
 import { defineStore } from 'pinia'
 
-export const useUserStore = defineStore({
-  id: 'user',
+
+export const useAuthStore = defineStore({
+  id: 'auth',
   state: () => ({
-    user: "",
-    fullName: "",
-    emailAddress: "",
-    inputValue: "",
+    // user: "",
+    // fullName: "",
+    // emailAddress: "",
+    // inputValue: "",
   }),
   getters: {
     
   },
   actions: {
-  //  on
+    // onSubmit () {
+    //   console.log('submitted')
+    // }
   }
 })

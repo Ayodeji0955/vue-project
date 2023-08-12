@@ -18,7 +18,7 @@
                       <label for="email">Full name</label>
                       <input 
                         type="name" 
-                        name="Full name"
+                        name="fullnameInput"
                         placeholder="Full name"
                         v-model="fullName"
                       />
@@ -26,7 +26,7 @@
                     <div class="field padding-bottom--24">
                       <label for="email">Email</label>
                       <input 
-                        type="email" 
+                        type="emailInput" 
                         name="email"
                         placeholder="Enter your email address"
                         v-model="emailAddress"
@@ -69,7 +69,11 @@
                     </div>
                     </div>
                     <div class="field padding-bottom--24 pt-3">
-                      <input type="submit" name="submit" value="Continue">
+                      <input 
+                        type="submit" 
+                        name="submit" 
+                        value="Continue"
+                      >
                     </div>
                     <div class="field">
                       <a class="ssolink" href="#">
@@ -94,12 +98,13 @@
   
 <script setup lang="ts">
 import { ref } from "vue";
-import { useUserStore } from "@/stores/UserStore"
 
-const useStore = useUserStore();
+const emailAddress = ref('');
+const fullName = ref('');
 
-// Use the store in your component
-console.log(useStore.user);
+const onSubmit = () => {
+  console.log('submitted')
+}
 
 const inputStrength = ref(0)
 const inputValue = ref('')
