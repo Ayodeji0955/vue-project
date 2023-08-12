@@ -4,7 +4,7 @@
         <div class="col-md-6 login__main-col">
           <div class="container py-4">
             <div class="formbg-outer">
-              <div class="formbg">
+              <div class="formbg" @submit.prevent="onSubmit">
                 <div class="formbg-inner padding-horizontal--48">
                   <div class=" text-center py-4">
                     <img src="~@/assets/images/img_1/favicon.png">
@@ -17,9 +17,10 @@
                     <div class="field padding-bottom--24">
                       <label for="email">Full name</label>
                       <input 
-                        type="email" 
+                        type="name" 
                         name="Full name"
                         placeholder="Full name"
+                        v-model="fullName"
                       />
                     </div>
                     <div class="field padding-bottom--24">
@@ -28,6 +29,7 @@
                         type="email" 
                         name="email"
                         placeholder="Enter your email address"
+                        v-model="emailAddress"
                       />
                     </div>
                     <div class="field padding-bottom--24">
@@ -92,6 +94,12 @@
   
 <script setup lang="ts">
 import { ref } from "vue";
+import { useUserStore } from "@/stores/UserStore"
+
+const useStore = useUserStore();
+
+// Use the store in your component
+console.log(useStore.user);
 
 const inputStrength = ref(0)
 const inputValue = ref('')
@@ -319,4 +327,4 @@ input {
   font-size: 14px;
 }
 </style>
-    
+    @/stores/userStore@/stores/UserStore
