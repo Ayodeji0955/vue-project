@@ -103,6 +103,11 @@ const emailAddress = ref('');
 const fullName = ref('');
 
 const onSubmit = () => {
+  // const data = {
+  //   emailAdress: this.emailAddress,
+  //   fullName: this.fullName,
+  //   inputValue: this.inputValue
+  // }
   console.log('submitted')
 }
 
