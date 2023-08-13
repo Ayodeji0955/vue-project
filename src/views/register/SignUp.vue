@@ -104,22 +104,20 @@ const emailAddress = ref('');
 const fullName = ref('');
 const inputValue = ref('')
 
-const onSubmit = () => {
-  const data = {
-    emailAdress: emailAddress.value,
-    fullName: fullName.value,
-    inputValue: inputValue.value
-  };
-
-  axios.post('http://127.0.0.1:8080/api/v1/auth/register', data)
-    .then(
-      res => {console.log(res) }
+const onSubmit = async () => {
+  try {
+    const response = await axios.post('auth/register', 
+      {
+        emailAdress: emailAddress.value,
+        fullName: fullName.value,
+        inputValue: inputValue.value
+      }
     )
-    .catch(
-      err => {console.log(err)}
-      )
+    console.log('Response:', response.data);
+  } catch (error) {
+    console.error('Error:', error);
+  }
 }
-
 
 
 const inputStrength = ref(0)
