@@ -99,20 +99,24 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+
 const emailAddress = ref('');
 const fullName = ref('');
+const inputValue = ref('')
 
 const onSubmit = () => {
-  // const data = {
-  //   emailAdress: this.emailAddress,
-  //   fullName: this.fullName,
-  //   inputValue: this.inputValue
-  // }
-  console.log('submitted')
+  const data = {
+    emailAdress: emailAddress.value,
+    fullName: fullName.value,
+    inputValue: inputValue.value
+  }
+  console.log(data)
 }
 
+
+
 const inputStrength = ref(0)
-const inputValue = ref('')
+
   
 const inputContainsSpecialCharacters = () => {
     const specialCharacters = /[`!@#$%^&*()_+\-=\\|,.<>?~]/
