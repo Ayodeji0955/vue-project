@@ -99,7 +99,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import axios from "axios";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const emailAddress = ref('');
 const fullName = ref('');
 const inputValue = ref('')
@@ -114,6 +116,7 @@ const onSubmit = async () => {
       }
     )
     console.log('Response:', response.data);
+    router.push('/login'); // Use router.push to navigate
   } catch (error) {
     console.error('Error:', error);
   }
