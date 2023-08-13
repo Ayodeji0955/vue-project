@@ -98,7 +98,7 @@
   
 <script setup lang="ts">
 import { ref } from "vue";
-
+import axios from "axios";
 
 const emailAddress = ref('');
 const fullName = ref('');
@@ -109,8 +109,15 @@ const onSubmit = () => {
     emailAdress: emailAddress.value,
     fullName: fullName.value,
     inputValue: inputValue.value
-  }
-  console.log(data)
+  };
+
+  axios.post('http://127.0.0.1:8080/api/v1/auth/register', data)
+    .then(
+      res => {console.log(res) }
+    )
+    .catch(
+      err => {console.log(err)}
+      )
 }
 
 
