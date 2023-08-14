@@ -41,7 +41,7 @@
                           name="passwordInput"
                           type="password"
                           placeholder="Enter password"
-                          v-model="inputValue"
+                          v-model="passwordInput"
                           @keyup="checkInputStrength"
                         />
                         <div class="row justify-content-between">
@@ -104,7 +104,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const emailAddress = ref('');
 const fullName = ref('');
-const inputValue = ref('')
+const passwordInput = ref('')
 
 const onSubmit = async () => {
   try {
@@ -112,7 +112,7 @@ const onSubmit = async () => {
       {
         emailAdress: emailAddress.value,
         fullName: fullName.value,
-        inputValue: inputValue.value
+        passwordInput: passwordInput.value
       }
     )
     console.log('Response:', response.data);
@@ -128,17 +128,17 @@ const inputStrength = ref(0)
   
 const inputContainsSpecialCharacters = () => {
     const specialCharacters = /[`!@#$%^&*()_+\-=\\|,.<>?~]/
-    return specialCharacters.test(inputValue.value)
+    return specialCharacters.test(passwordInput.value)
 }
 
 const inputContainsNumbers = () => {
     const numbers = /\d/
-    return numbers.test(inputValue.value)
+    return numbers.test(passwordInput.value)
 }
 const checkInputStrength = () => {
     inputStrength.value = 0
 
-    const inputStrengthLengthCheck = inputValue.value && inputValue.value.length >= 8
+    const inputStrengthLengthCheck = passwordInput.value && passwordInput.value.length >= 8
     const inputContainsSpecialChars = inputContainsSpecialCharacters()
     const inputContainsNum = inputContainsNumbers()
 
