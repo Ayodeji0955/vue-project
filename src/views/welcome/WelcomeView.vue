@@ -7,31 +7,31 @@
                 <p class="welcome__content--sub-txt pt-2">We’re glad you’re here. Choose your path to get started</p>
             </div>
             <div class="row welcome__row justify-content-evenly pt-4">
-                <div class="col-md-4 welcome__col">
+                <div class="col-md-5 welcome__col">
                     <div class="">
                         <img src="~@/assets/images/img_1/industry.png" alt="" class="welcome__col--img">
                     </div>
                     <h1 class="welcome__col--txt">Venture owner</h1>
                     <p class="welcome__col--sub-txt">
-                        <span class="welcome__col--sub-col-txt">Register your venture to have access to exclusive </span>
-                        <span class="welcome__col--sub-col-txt">perks, tools, resources, and courses designed just </span>
-                        <span class="welcome__col--sub-col-txt">to grow your business. No matter what stage you</span>
-                        <span class="welcome__col--sub-col-txt">are in, there is something made just for you.</span>
+                        <span class="welcome__col--sub-col-txt">
+                            Register your venture to have access to exclusive perks, tools, resources, and courses designed just 
+                            to grow your business. No matter what stage you are in, there is something made just for you.
+                        </span>
                     </p>
                     <div class="field padding-bottom--24 pt-3">
                       <input type="submit" name="submit" value="Continue as a Venture Owner">
                     </div>
                 </div>
-                <div class="col-md-4 welcome__sub-col">
+                <div class="col-md-5 welcome__sub-col">
                     <div class="">
                         <img src="~@/assets/images/img_1/teach.png" alt="" class="welcome__col--img">
                     </div>
                     <h1 class="welcome__col--txt">Entrepreneurship support provider</h1>
                     <p class="welcome__col--sub-txt">
-                        <span class="welcome__col--sub-col-txt">Become a contributor to the Venture Nation </span>
-                        <span class="welcome__col--sub-col-txt"> community helping other entrepreneurs grow their</span>
-                        <span class="welcome__col--sub-col-txt">businesses with the offerings, expertise, support,</span>
-                        <span class="welcome__col--sub-col-txt">tools, and resources, you bring to the table.</span>
+                        <span class="welcome__col--sub-col-txt">
+                            Become a contributor to the Venture Nation community helping other entrepreneurs grow their 
+                            businesses with the offerings, expertise, support, tools, and resources, you bring to the table.
+                        </span>
                     </p>
                     <div class="field padding-bottom--24 pt-3">
                       <input type="submit" name="submit" value="Continue as an ESP">
@@ -105,11 +105,11 @@
   }
 
   &__sub-col {
-    padding: 0.5rem 0rem;
-    background-color: #FFFFFF;
-    box-shadow: 00 0 50px #ccc;
-    border-radius: 0.938rem;
-    padding: 1.5rem;
+        padding: 0.5rem 0rem;
+        background-color: #FFFFFF;
+        box-shadow: 00 0 50px #ccc;
+        border-radius: 0.938rem;
+        padding: 1.5rem;
   }
 
 
