@@ -55,10 +55,6 @@
 .welcome {
     
     &__container {
-    //   background-color: white;
-    //   background-position: center;
-    //   background-size:cover;
-    //   height: 100vh;
       padding-top: 4rem;
 
   }
