@@ -116,7 +116,7 @@ const onSubmit = async () => {
       }
     )
     console.log('Response:', response.data);
-    router.push('/signin'); // Use router.push to navigate
+    router.push('/confirm-email'); // Use router.push to navigate
   } catch (error) {
     console.error('Error:', error);
   }
