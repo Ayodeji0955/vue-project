@@ -112,7 +112,7 @@ const onSubmit = async () => {
       {
         emailAdress: emailAddress.value,
         fullName: fullName.value,
-        password: passwordInput.value
+        passwordInput: passwordInput.value
       }
     )
     console.log('Response:', response.data);
@@ -121,6 +121,8 @@ const onSubmit = async () => {
     console.error('Error:', error);
   }
 }
+
+
 
 
 const inputStrength = ref(0)
