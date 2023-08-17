@@ -112,7 +112,7 @@ const onSubmit = async () => {
       {
         emailAdress: emailAddress.value,
         fullName: fullName.value,
-        passwordInput: passwordInput.value
+        password: passwordInput.value
       }
     )
     console.log('Response:', response.data);
