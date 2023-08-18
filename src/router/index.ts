@@ -4,6 +4,7 @@ import SignIn from '../views/login/SignIn.vue'
 import SignUp from '../views/register/SignUp.vue'
 import WelcomeView from '../views/welcome/WelcomeView.vue'
 import ConfirmEmail from '../views/register/ConfirmEmail.vue'
+import DashBoard from '../components/dashboard/DashBoard.vue'
 // import ForgotPassword from '../views/password/ForgotPassword.vue'
 
 
@@ -34,6 +35,11 @@ const router = createRouter({
       path: '/confirm-email',
       name: 'confirm-email',
       component: ConfirmEmail
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: DashBoard
     },
     {
       path: '/about',
