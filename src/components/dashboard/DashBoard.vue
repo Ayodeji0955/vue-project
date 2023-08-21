@@ -1,11 +1,11 @@
 <template>
     <div class="">
-        
+        <DashNav />
     </div>
 </template>
 
 <script setup lang="ts">
-
+import DashNav from '../dashboard/DashNav.vue'
 
 </script>
 
