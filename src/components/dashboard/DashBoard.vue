@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="dashboard">
         <DashNav />
     </div>
 </template>
@@ -14,5 +14,8 @@ import DashNav from '../dashboard/DashNav.vue'
 @import "@/sass/mixin.scss";
 
 
-
+.dashboard {
+    background-color: white;
+    
+}
 </style>
