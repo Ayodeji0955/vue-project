@@ -47,7 +47,7 @@
 
 
 .dash-nav {
-    background-color: blueviolet;
+    // background-color: blueviolet;
     // padding: 0.5rem 2rem;
     
 

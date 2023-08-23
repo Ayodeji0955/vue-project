@@ -15,7 +15,7 @@ import DashNav from '../dashboard/DashNav.vue'
 
 
 .dashboard {
-    background-color: white;
+    background-color: red;
     
 }
 </style>
