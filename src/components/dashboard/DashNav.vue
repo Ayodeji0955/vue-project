@@ -102,5 +102,9 @@ li a {
 .active {
   background-color: #04AA6D;
 }
-
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+}
 </style>
