@@ -1,6 +1,6 @@
 <template>
+    <DashNav />
     <div class="dashboard">
-        <DashNav />
     </div>
 </template>
 

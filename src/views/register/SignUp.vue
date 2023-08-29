@@ -56,7 +56,7 @@
                           <div
                             class="np-password-strength-indicator"
                             :style="{
-                              backgroundColor: getIndicatorBackgroundColor(),
+                              backgroundColor: getBackgroundIndicatorColor(),
                               width: getIndicatorWidth() + '%',
                             }"
                           >
@@ -155,7 +155,7 @@ const checkInputStrength = () => {
     }
 }
 
-const getIndicatorBackgroundColor = () => {
+const getBackgroundIndicatorColor = () => {
     let color = "gray"
     switch (inputStrength.value) {
         case 0:
@@ -175,12 +175,8 @@ const getIndicatorBackgroundColor = () => {
     return color
 }
 
-// const getIndicatorWidth = () => {
-//   return parseInt((inputStrength.value / 3) * 100).toString()
-// }
-
 const getIndicatorWidth = () => {
-return ((inputStrength.value / 3) * 100).toString();
+  return ((inputStrength.value / 3) * 100).toString();
 };
   
 </script>

@@ -3,7 +3,7 @@
         <nav class="navbar sticky-top bg-body-tertiary">
             <div class="container-fluid">
                 <div class=" dash-nav__nav-img">
-                    <img src="~@/assets/images/img_1/favicon.png" class="dash-nav__nav-img--img">
+                    <img src="~@/assets/images/img_1/logo.png" class="dash-nav__nav-img--img">
                 </div>
                 <form class="d-flex" role="search">
                     <a class="navbar-brand">Learning hub</a>
@@ -48,12 +48,12 @@
 
 .dash-nav {
     background-color: blueviolet;
-    padding: 0.5rem 2rem;
+    // padding: 0.5rem 2rem;
     
 
     &__nav-img {
         &--img {
-            width: 2.17119rem; 
+            width: 50%; 
             // height: 2.17119rem;
         }
     }
@@ -66,11 +66,6 @@
     }
 }
 
-// body {
-//   min-height: 100vh;
-//   background-color: #ffffff;
-//   margin: 0;
-// }
 
 ul {
   list-style-type: none;
@@ -91,20 +86,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-//   padding: 14px 16px;
   text-decoration: none;
 }
 
-// li a:hover:not(.active) {
-//   background-color: #111;
-// }
-
-.active {
-  background-color: #04AA6D;
-}
-body {
-    min-height: 100vh;
-    background-color: #ffffff;
-    margin: 0;
-}
 </style>
