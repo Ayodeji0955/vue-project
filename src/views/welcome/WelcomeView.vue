@@ -53,6 +53,7 @@
 
 
 .welcome {
+    height: 100vh;
     
     &__container {
       padding-top: 4rem;
@@ -137,9 +138,9 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-body {
-    min-height: 100vh;
-    background-color: #ffffff;
-    margin: 0;
-}
+// body {
+//     min-height: 100vh;
+//     background-color: #ffffff;
+//     margin: 0;
+// }
 </style>

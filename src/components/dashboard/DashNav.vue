@@ -47,8 +47,8 @@
 
 
 .dash-nav {
-    // background-color: blueviolet;
-    // padding: 0.5rem 2rem;
+    background-color: blueviolet;
+    padding: 0.5rem 2rem;
     
 
     &__nav-img {

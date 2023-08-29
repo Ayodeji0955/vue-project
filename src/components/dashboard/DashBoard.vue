@@ -14,8 +14,8 @@ import DashNav from '../dashboard/DashNav.vue'
 @import "@/sass/mixin.scss";
 
 
-.dashboard {
-    background-color: red;
+// .dashboard {
+//     background-color: red;
     
-}
+// }
 </style>
