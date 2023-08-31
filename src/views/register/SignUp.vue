@@ -98,40 +98,29 @@
   
 <script setup lang="ts">
 import { ref } from "vue";
-// import axios from "axios";
-// import { useRouter } from "vue-router";
-import { useAuthStore } from '@/stores/UserStore';
+import axios from "axios";
+import { useRouter } from "vue-router";
 
-// const router = useRouter();
-const myStore = useAuthStore();
+const router = useRouter();
+const emailAddress = ref('');
+const fullName = ref('');
+const passwordInput = ref('')
 
-    const handleSubmit = async () => {
-      await myStore.submitForm();
-      // Perform any necessary actions after the submission
-      return {
-        handleSubmit,
-      };
-    };
-
-
-// const emailAddress = ref('');
-// const fullName = ref('');
-// const passwordInput = ref('');
-
-// const onSubmit = async () => {
-//   try {
-//     const response = await axios.post('auth/register', {
-//       emailAddress: emailAddress.value,
-//       fullName: fullName.value,
-//       passwordInput: passwordInput.value
-//     });
-
-//     console.log('Response:', response.data);
-//     router.push('/confirm-email'); // Use router.push to navigate
-//   } catch (error) {
-//     console.error('Error:', error);
-//   }
-// };
+const onSubmit = async () => {
+  try {
+    const response = await axios.post('auth/register', 
+      {
+        emailAdress: emailAddress.value,
+        fullName: fullName.value,
+        passwordInput: passwordInput.value
+      }
+    )
+    console.log('Response:', response.data);
+    router.push('/confirm-email'); // Use router.push to navigate
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
 
 
 
