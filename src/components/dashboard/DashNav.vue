@@ -3,7 +3,7 @@
         <nav class="navbar sticky-top bg-body-tertiary">
             <div class="container-fluid">
                 <div class=" dash-nav__nav-img">
-                    <img src="~@/assets/images/img_1/logo.png" class="dash-nav__nav-img--img">
+                    <img src="~@/assets/images/img_1/favicon.png" class="dash-nav__nav-img--img">
                 </div>
                 <form class="d-flex" role="search">
                     <a class="navbar-brand">Learning hub</a>
@@ -21,7 +21,7 @@
                             <li><a class="dropdown-item" href="#">Separated link</a></li>
                         </ul>
                     </li>
-                    <!-- <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown link
                         </a>
@@ -30,7 +30,7 @@
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </li> -->
+                    </li>
                 </form>
             </div>
         </nav>
@@ -53,7 +53,7 @@
 
     &__nav-img {
         &--img {
-            width: 50%; 
+            width: 2.17119rem; 
             // height: 2.17119rem;
         }
     }
@@ -75,7 +75,7 @@ ul {
   background-color: #333;
   position: fixed;
   top: 0;
-  width: 100%;
+//   width: 100%;
 }
 
 li {
@@ -88,5 +88,6 @@ li a {
   text-align: center;
   text-decoration: none;
 }
+
 
 </style>
