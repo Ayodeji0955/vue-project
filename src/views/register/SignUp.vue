@@ -323,7 +323,7 @@ input {
     outline: none;
 }
 .np-password-strength-indicator-container {
-    width: 400px;
+    // width: 400px;
     height: 10px;
     background: #eee;
     border-radius: 6px;
