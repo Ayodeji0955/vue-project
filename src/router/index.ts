@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import SignIn from '../views/login/SignIn.vue'
 import SignUp from '../views/register/SignUp.vue'
 import WelcomeView from '../views/welcome/WelcomeView.vue'
-import ConfirmEmail from '../views/register/ConfirmEmail.vue'
+// import ConfirmEmail from '../views/register/ConfirmEmail.vue'
 import DashBoard from '../components/dashboard/DashBoard.vue'
 // import ForgotPassword from '../views/password/ForgotPassword.vue'
 
@@ -31,11 +31,11 @@ const router = createRouter({
       name: 'welcome',
       component: WelcomeView
     },
-    {
-      path: '/confirm-email',
-      name: 'confirm-email',
-      component: ConfirmEmail
-    },
+    // {
+    //   path: '/confirm-email',
+    //   name: 'confirm-email',
+    //   component: ConfirmEmail
+    // },
     {
       path: '/dashboard',
       name: 'dashboard',
