@@ -20,7 +20,7 @@
                         type="name" 
                         name="fullnameInput"
                         placeholder="Full name"
-                        v-model="fullName"
+                        v-model="name"
                       />
                     </div>
                     <div class="field padding-bottom--24">
@@ -29,7 +29,7 @@
                         type="emailInput" 
                         name="email"
                         placeholder="Enter your email address"
-                        v-model="emailAddress"
+                        v-model="email"
                       />
                     </div>
                     <div class="field padding-bottom--24">
@@ -41,7 +41,7 @@
                           name="passwordInput"
                           type="password"
                           placeholder="Enter password"
-                          v-model="passwordInput"
+                          v-model="password"
                           @keyup="checkInputStrength"
                         />
                         <div class="row justify-content-between">
@@ -101,26 +101,33 @@ import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
 
-const router = useRouter();
-const emailAddress = ref('');
-const fullName = ref('');
-const passwordInput = ref('')
 
-const onSubmit = async () => {
-  try {
-    const response = await axios.post('auth/register', 
-      {
-        emailAdress: emailAddress.value,
-        fullName: fullName.value,
-        passwordInput: passwordInput.value
+const email = ref('');
+    const name = ref('');
+    const password = ref('');
+    const router = useRouter();
+
+    const onSubmit = async () => {
+      try {
+        const response = await axios.post('auth/register', {
+          email: email.value,
+          name: name.value,
+          password: password.value,
+        });
+
+        console.log('Response:', response.data);
+        router.push('/confirm-email'); // Use router.push to navigate
+      } catch (error) {
+        console.error('Error:', error);
       }
-    )
-    console.log('Response:', response.data);
-    router.push('/confirm-email'); // Use router.push to navigate
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
+
+      return {
+        email,
+        name,
+        password,
+        onSubmit,
+      };
+    };
 
 
 
@@ -130,17 +137,17 @@ const inputStrength = ref(0)
   
 const inputContainsSpecialCharacters = () => {
     const specialCharacters = /[`!@#$%^&*()_+\-=\\|,.<>?~]/
-    return specialCharacters.test(passwordInput.value)
+    return specialCharacters.test(password.value)
 }
 
 const inputContainsNumbers = () => {
     const numbers = /\d/
-    return numbers.test(passwordInput.value)
+    return numbers.test(password.value)
 }
 const checkInputStrength = () => {
     inputStrength.value = 0
 
-    const inputStrengthLengthCheck = passwordInput.value && passwordInput.value.length >= 8
+    const inputStrengthLengthCheck = password.value && password.value.length >= 8
     const inputContainsSpecialChars = inputContainsSpecialCharacters()
     const inputContainsNum = inputContainsNumbers()
 
