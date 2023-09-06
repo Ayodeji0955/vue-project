@@ -33,7 +33,7 @@ const router = createRouter({
     },
     {
       path: '/confirm-email',
-      name: 'confirm-email',
+      name: 'ConfirmEmail',
       component: ConfirmEmail
     },
     {
