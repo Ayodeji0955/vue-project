@@ -4,6 +4,15 @@
         <div class="col-md-6 login__main-col">
           <div class="container py-4">
             <div class="formbg-outer">
+              <div class="alert alert-danger" role="alert"
+                v-if="error"
+                variant="danger"
+                dismissible
+                show
+                @dismissed="clearError"
+              >
+                {{ error }}
+              </div>
               <div class="formbg" @submit.prevent="onSubmit">
                 <div class="formbg-inner padding-horizontal--48">
                   <div class=" text-center py-4">
@@ -101,14 +110,15 @@ import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
 
+  
+  const error = ref('');
+  const email = ref('');
+  const name = ref('');
+  const password = ref('');
+  const router = useRouter();
 
-const email = ref('');
-    const name = ref('');
-    const password = ref('');
-    const router = useRouter();
-
-    const onSubmit = async () => {
-      try {
+  const onSubmit = async () => {
+    try {
         const response = await axios.post('auth/register', {
           email: email.value,
           name: name.value,
@@ -119,15 +129,26 @@ const email = ref('');
         router.push('/confirm-email'); // Use router.push to navigate
       } catch (error) {
         console.error('Error:', error);
-      }
+    }
 
-      return {
-        email,
-        name,
-        password,
-        onSubmit,
-      };
+    // Simulating an error during signup
+    error.value = 'Failed to sign up. Please try again.';
+    
+    return {
+      email,
+      name,
+      password,
+      onSubmit,
     };
+ };
+
+const clearError = () => {
+  error.value = '';
+
+  return {
+    clearError
+  }
+};
 
 
 
