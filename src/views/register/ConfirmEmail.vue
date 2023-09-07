@@ -3,15 +3,14 @@
         <div class="row align-items-center">
         <div class="col-md-6 login__main-col">
             <div class="container py-4">
-            <div class="formbg-outer"  @submit.prevent="onSubmit">
+            <div class="formbg-outer" >
                 <div class="formbg">
                 <div class="formbg-inner padding-horizontal--48">
                     <div class=" text-center py-5">
                     <img src="~@/assets/images/img_1/favicon.png">
                     </div>
                     <h1 class="padding-bottom--12 text-center">Confirm Email</h1>
-                    <span class="padding-bottom--15 text-center">Information link has been sent to your email address </span>
-                    <span class="padding-bottom--15 text-center"> email address </span>
+                    <span class="padding-bottom--15 text-center">Information link has been sent to your email address email address</span>
                     <form id="stripe-login">
                     <div class=" text-center py-5 mail">
                         <img src="~@/assets/images/img_1/mail.png">
@@ -24,9 +23,8 @@
                             type="submit" 
                             name="submit" 
                             value="Click to resend"
-                            id="confirmCode"
-                            v-model="confirmToken"
-                            required
+                           
+                           
                         >
                     </div>
                     </form>
@@ -41,65 +39,6 @@
 </template>
   
 <script lang="ts">
-import { ref } from "vue";
-import axios from "axios";
-// import { useRouter } from "vue-router";
-import router from "@/router";
-
-
-const confirmToken = ref('');
-const confirmMessage = ref('');
-
-const onSubmit = async (event: Event) => {
-    event.preventDefault();
-
-      try {
-        const response = await axios.post('auth/register', {
-          confirmToken: confirmToken.value,
-        });
-        
-
-        console.log('Response:', response.data);
-        router.push('/welcome'); // Use router.push to navigate
-      } catch (error) {
-        console.error('Error:', error);
-      }
-
-      return {
-        confirmToken,
-        confirmMessage,
-        onSubmit,
-      };
-}
-
-
-
-    // const confirmToken = ref('');
-    // const confirmnMessage = ref('');
-
-    // const onSubmit = async (event: Event) => {
-    //   event.preventDefault();
-
-    //     try {
-    //         const response = await axios.post('/api/confirm-email', {
-    //         confirmToken: confirmToken.value,
-    //         });
-
-    //         if (response.data.success) {
-    //         confirmMessage.value = 'Email confirmed successfully!';
-    //         } else {
-    //         confirmMessage.value = 'Invalid confirmation token.';
-    //         }
-    //     } catch (error) {
-    //         console.error(error);
-    //         confirmMessage.value = 'An error occurred while confirming the email.';
-    //     }
-    //     return {
-    //       confirmToken,
-    //       confirmMessage,
-    //       onSubmit,
-    //     };
-    // };
 
 
 
