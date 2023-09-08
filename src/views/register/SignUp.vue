@@ -4,7 +4,19 @@
         <div class="col-md-6 login__main-col">
           <div class="container py-4">
             <div class="formbg-outer">
-              <div class="alert alert-danger" role="alert"
+              <div class="container">
+                <button class="btn btn-warning" 
+                  onclick="createAlert('','','Here is a bunch of text about some stuff that happened.','warning',false,true,'pageMessages');"
+                  v-if="error"
+                  variant="danger"
+                  dismissible
+                  show
+                  @dismissed="clearError"
+                >
+                {{ error }}
+                </button>
+              </div>
+              <!-- <div class="alert alert-danger" role="alert"
                 v-if="error"
                 variant="danger"
                 dismissible
@@ -12,7 +24,7 @@
                 @dismissed="clearError"
               >
                 {{ error }}
-              </div>
+              </div> -->
               <div class="formbg" @submit.prevent="onSubmit">
                 <div class="formbg-inner padding-horizontal--48">
                   <div class=" text-center py-4">
@@ -374,5 +386,30 @@ input {
   padding: 1rem 0;
   font-size: 14px;
 }
+
+//// boostrap alert
+
+
+#pageMessages {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 30%;
+}
+
+.alert {
+  position: relative;
+}
+
+.alert .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1em;
+}
+
+.alert .fa {
+  margin-right:.3em;
+}
 </style>
-    @/stores/userStore@/stores/UserStore
+ 
