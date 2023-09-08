@@ -13,7 +13,7 @@
                   show
                   @dismissed="clearError"
                 >
-                {{ error }}
+                <!-- {{ error }} -->
                 </button>
               </div>
               <!-- <div class="alert alert-danger" role="alert"
