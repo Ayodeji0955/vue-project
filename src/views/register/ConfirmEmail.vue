@@ -17,14 +17,15 @@
                     </div>
                     <div class="field field-checkbox padding-bottom--24">
                         <a class="ssolink" href="#">Didn't receive the email</a>
+                        <p v-if="isLoading">Verifying...</p>
+                        <p v-if="error">{{ error }}</p>
+                        <p v-if="success">Email verified successfully!</p>
                     </div>
                     <div class="field padding-bottom--24">
                         <input 
                             type="submit" 
                             name="submit" 
-                            value="Click to resend"
-                           
-                           
+                            value="Click to resend"  
                         >
                     </div>
                     </form>
@@ -39,7 +40,67 @@
 </template>
   
 <script lang="ts">
+  import { defineComponent, reactive, onMounted } from 'vue';
+//   import { useRouter } from 'vue-router';
+  import axios from 'axios';
 
+  interface VerifyEmailResponse {
+    success: boolean;
+    error?: string;
+  }
+
+  
+  export default defineComponent({
+    name: 'VerificationEmail',
+    setup() {
+      const state = reactive({
+        isLoading: false,
+        error: '',
+        success: false,
+      });
+
+      onMounted(() => {
+        verifyEmail();
+      });
+
+      async function verifyEmail(): Promise<void> {
+        const token = getVerificationTokenFromURL();
+
+        if (token) {
+          state.isLoading = true;
+
+          try {
+            const response = await axios.post<VerifyEmailResponse>(
+              '/api/verify-email',
+              { token }
+            );
+
+            if (response.data.success) {
+              state.success = true;
+            } else {
+              state.error = response.data.error || 'Verification failed.';
+            }
+          } catch (error) {
+            state.error = 'An error occurred during verification.';
+            console.error('Verification error:', error);
+          }
+
+          state.isLoading = false;
+        } else {
+          state.error = 'Invalid verification token.';
+        }
+      }
+
+      function getVerificationTokenFromURL(): string | null {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        return urlSearchParams.get('token');
+      }
+
+      return {
+        ...state,
+      };
+    },
+  });
 
 
 </script>
