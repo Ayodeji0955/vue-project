@@ -5,26 +5,7 @@
           <div class="container py-4">
             <div class="formbg-outer">
               <div class="container">
-                <button class="btn btn-warning" 
-                  onclick="createAlert('','','Here is a bunch of text about some stuff that happened.','warning',false,true,'pageMessages');"
-                  v-if="error"
-                  variant="danger"
-                  dismissible
-                  show
-                  @dismissed="clearError"
-                >
-                <!-- {{ error }} -->
-                </button>
               </div>
-              <!-- <div class="alert alert-danger" role="alert"
-                v-if="error"
-                variant="danger"
-                dismissible
-                show
-                @dismissed="clearError"
-              >
-                {{ error }}
-              </div> -->
               <div class="formbg" @submit.prevent="onSubmit">
                 <div class="formbg-inner padding-horizontal--48">
                   <div class=" text-center py-4">
@@ -154,13 +135,13 @@ import { useRouter } from "vue-router";
     };
  };
 
-const clearError = () => {
-  error.value = '';
+// const clearError = () => {
+//   error.value = '';
 
-  return {
-    clearError
-  }
-};
+//   return {
+//     clearError
+//   }
+// };
 
 
 
