@@ -5,7 +5,7 @@ import SignUp from '../views/register/SignUp.vue'
 import WelcomeView from '../views/welcome/WelcomeView.vue'
 import ConfirmEmail from '../views/register/ConfirmEmail.vue'
 import DashBoard from '../components/dashboard/DashBoard.vue'
-import VerifyError from '../views/register/VerifyError.vue'
+// import VerifyError from '../views/register/VerifyError.vue'
 
 
 
@@ -42,11 +42,11 @@ const router = createRouter({
       name: 'dashboard',
       component: DashBoard
     },
-    {
-      path: '/auth/verification-email/:token',
-      name: 'VerifyError',
-      component: VerifyError
-    },
+    // {
+    //   path: '/auth/verification-email/:token',
+    //   name: 'VerifyError',
+    //   component: VerifyError
+    // },
     {
       path: '/about',
       name: 'about',
