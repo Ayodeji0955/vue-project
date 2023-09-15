@@ -102,18 +102,18 @@
 </template>
   
 <script setup lang="ts">
-import { ref } from "vue";
-import axios from "axios";
-import { useRouter } from "vue-router";
-import { createToast } from 'mosha-vue-toastify';
-import "mosha-vue-toastify/dist/style.css";
+import { ref } from "vue"
+import axios from "axios"
+import { useRouter } from "vue-router"
+import { createToast } from 'mosha-vue-toastify'
+import "mosha-vue-toastify/dist/style.css"
   
-  const error = ref('');
-  const email = ref('');
-  const name = ref('');
-  const password = ref('');
-  const router = useRouter();
-  const toast = createToast("");
+  const error = ref('')
+  const email = ref('')
+  const name = ref('')
+  const password = ref('')
+  const router = useRouter()
+  const toast = createToast("")
 
   const onSubmit = async () => {
     try {
@@ -123,10 +123,10 @@ import "mosha-vue-toastify/dist/style.css";
           password: password.value,
         });
 
-        console.log('Response:', response.data);
-        router.push('/confirm-email'); // Use router.push to navigate
+        console.log('Response:', response.data)
+        router.push('/confirm-email') // Use router.push to navigate
       } catch (error) {
-            console.error('Error:', error);
+            console.error('Error:', error)
         // if (error.response && error.response.status === 400) {
         //     toast.error('Invalid request. Please check your inputs.');
         //   } else {
