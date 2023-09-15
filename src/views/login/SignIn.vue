@@ -13,10 +13,18 @@
                   Welcome Back!
                 </h1>
                 <span class="padding-bottom--15 text-center">Kindly input your details to access your account. </span>
-                <form id="stripe-login">
+                <form id="stripe-login" @submit.prevent="onSubmit">
                   <div class="field padding-bottom--24">
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
+                    <label 
+                      for="email"
+                    >
+                      Email
+                    </label>
+                    <input 
+                      type="email" 
+                      name="email"
+                      v-model="form.email"
+                    >
                   </div>
                   <div class="field padding-bottom--24">
                     <div class="grid--50-50">
@@ -27,6 +35,7 @@
                         type="password" 
                         name="password"
                         placeholder="Enter password"
+                        v-model="form.password"
                       >
                     </div>
                   </div>
@@ -62,16 +71,25 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue"
+import { ref } from "vue"
 import axios from "axios"
+import { useRouter } from "vue-router"
 
-const user = ref();
 
-onMounted(async () => {
-  const data = await axios.get('auth/login');
-  console.log(data);
-
+const router = useRouter()
+const form = ref({
+  email: '', 
+  password: ''
 })
+
+const onSubmit = async () => {
+  await axios.post('/auth/login', {
+    email: form.value.email,
+    password: form.value.password
+  })
+  router.push('/dashboard')
+  console.log (form)
+}
 
 </script>
   
