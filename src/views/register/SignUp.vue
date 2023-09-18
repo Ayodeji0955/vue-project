@@ -6,9 +6,9 @@
             <div class="formbg-outer">
               <div class="container">
               </div>
-              <div v-if="error !== ''">
+              <!-- <div v-if="error !== ''">
                 <p>Error: {{ error }}</p>
-              </div>
+              </div> -->
               <div class="formbg" @submit.prevent="onSubmit">
                 <div class="formbg-inner padding-horizontal--48">
                   <div class=" text-center py-4">
@@ -25,7 +25,7 @@
                         type="name" 
                         name="fullnameInput"
                         placeholder="Full name"
-                        v-model="name"
+                        v-model="form.name"
                       />
                     </div>
                     <div class="field padding-bottom--24">
@@ -34,7 +34,7 @@
                         type="emailInput" 
                         name="email"
                         placeholder="Enter your email address"
-                        v-model="email"
+                        v-model="form.email"
                       />
                     </div>
                     <div class="field padding-bottom--24">
@@ -46,7 +46,7 @@
                           name="passwordInput"
                           type="password"
                           placeholder="Enter password"
-                          v-model="password"
+                          v-model="form.password"
                           @keyup="checkInputStrength"
                         />
                         <div class="row justify-content-between">
@@ -105,58 +105,60 @@
 import { ref } from "vue"
 import axios from "axios"
 import { useRouter } from "vue-router"
-import { createToast } from 'mosha-vue-toastify'
-import "mosha-vue-toastify/dist/style.css"
+// import { createToast } from 'mosha-vue-toastify'
+// import "mosha-vue-toastify/dist/style.css"
+
+const router = useRouter()
+const form = ref({
+  name: '',
+  email: '',
+  password: '',
+  password_confirmation: '',
+})
+
+
+const onSubmit = async () => {
   
-  const error = ref('')
-  const email = ref('')
-  const name = ref('')
-  const password = ref('')
-  const router = useRouter()
-  const toast = createToast("")
+}
 
-  const onSubmit = async () => {
-    try {
-        const response = await axios.post('auth/register', {
-          email: email.value,
-          name: name.value,
-          password: password.value,
-        });
+  
+//   const error = ref('')
+//   const email = ref('')
+//   const name = ref('')
+//   const password = ref('')
+//   const router = useRouter()
+//   const toast = createToast("")
 
-        console.log('Response:', response.data)
-        router.push('/confirm-email') // Use router.push to navigate
-      } catch (error) {
-            console.error('Error:', error)
-        // if (error.response && error.response.status === 400) {
-        //     toast.error('Invalid request. Please check your inputs.');
-        //   } else {
-        //     toast.error('Failed to sign up. Please try again.');
-        // }
-      }
-    // Simulating an error during signup
-    // error.value = 'Failed to sign up. Please try again.';
+//   const onSubmit = async () => {
+//     try {
+//         const response = await axios.post('auth/register', {
+//           email: email.value,
+//           name: name.value,
+//           password: password.value,
+//         });
+
+//         console.log('Response:', response.data)
+//         router.push('/confirm-email') // Use router.push to navigate
+//       } catch (error) {
+//             console.error('Error:', error)
+//       }
+  
     
-    return {
-      error,
-      email,
-      name,
-      password,
-      onSubmit,
-      toast
-    };
- };
-
-// const clearError = () => {
-//   error.value = '';
-
-//   return {
-//     clearError
-//   }
-// };
+//     return {
+//       error,
+//       email,
+//       name,
+//       password,
+//       onSubmit,
+//       toast
+//     };
+//  };
 
 
 
 
+
+const password = ref('')
 const inputStrength = ref(0)
 
   
