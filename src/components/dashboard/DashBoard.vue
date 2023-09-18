@@ -6,14 +6,15 @@
 
 <script setup lang="ts">
 import DashNav from '../dashboard/DashNav.vue'
-import { onMounted } from "vue"
+import { ref, onMounted } from "vue"
 import axios from "axios"
 
-// const user = ref();
+const user = ref();
 
 onMounted(async () => {
   const data = await axios.get('/users/current-user');
-  console.log(data);
+  user.value = data
+  console.log(user);
 
 })
 </script>
