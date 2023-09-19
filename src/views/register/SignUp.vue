@@ -25,7 +25,7 @@
                         type="name" 
                         name="fullnameInput"
                         placeholder="Full name"
-                        v-model="form.name"
+                        v-model="name"
                       />
                     </div>
                     <div class="field padding-bottom--24">
@@ -34,7 +34,7 @@
                         type="emailInput" 
                         name="email"
                         placeholder="Enter your email address"
-                        v-model="form.email"
+                        v-model="email"
                       />
                     </div>
                     <div class="field padding-bottom--24">
@@ -46,7 +46,7 @@
                           name="passwordInput"
                           type="password"
                           placeholder="Enter password"
-                          v-model="form.password"
+                          v-model="password"
                           @keyup="checkInputStrength"
                         />
                         <div class="row justify-content-between">
@@ -109,58 +109,31 @@ import { useRouter } from "vue-router"
 // import "mosha-vue-toastify/dist/style.css"
 
 const router = useRouter()
-const form = ref({
-  name: '',
-  email: '',
-  password: '',
-  password_confirmation: '',
-})
+
+const name = ref("")
+const email = ref("")
+const password = ref("")
+
+// const form = ref({
+//   name: '',
+//   email: '',
+//   password: '',
+//   password_confirmation: '',
+// })
 
 
 const onSubmit = async () => {
-  
+  await axios.post('auth/register', {
+    name: name.value,
+    email: email.value,
+    password: password.value,
+    // password_confirmation: form.value.password_confirmation,
+  })
+  router.push('/confirm-email')
 }
 
-  
-//   const error = ref('')
-//   const email = ref('')
-//   const name = ref('')
-//   const password = ref('')
-//   const router = useRouter()
-//   const toast = createToast("")
 
-//   const onSubmit = async () => {
-//     try {
-//         const response = await axios.post('auth/register', {
-//           email: email.value,
-//           name: name.value,
-//           password: password.value,
-//         });
-
-//         console.log('Response:', response.data)
-//         router.push('/confirm-email') // Use router.push to navigate
-//       } catch (error) {
-//             console.error('Error:', error)
-//       }
-  
-    
-//     return {
-//       error,
-//       email,
-//       name,
-//       password,
-//       onSubmit,
-//       toast
-//     };
-//  };
-
-
-
-
-
-const password = ref('')
 const inputStrength = ref(0)
-
   
 const inputContainsSpecialCharacters = () => {
     const specialCharacters = /[`!@#$%^&*()_+\-=\\|,.<>?~]/
