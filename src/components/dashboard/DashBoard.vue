@@ -12,11 +12,15 @@ import axios from "axios"
 const user = ref();
 
 onMounted(async () => {
+// get token from
+  await getToken()
   const data = await axios.get('/users/current-user');
   user.value = data.data
   console.log(user.value);
-
 })
+const getToken = async() => {
+    await axios.get('/sanctum/csrf-cookie')
+}
 </script>
 
 <style lang="scss" scoped>

@@ -114,15 +114,13 @@ const name = ref("")
 const email = ref("")
 const password = ref("")
 
-// const form = ref({
-//   name: '',
-//   email: '',
-//   password: '',
-//   password_confirmation: '',
-// })
+const getToken = async () => {
+  await axios.get('/sanctum/csrf-cookie')
+}
 
 
 const onSubmit = async () => {
+  await getToken()
   await axios.post('auth/register', {
     name: name.value,
     email: email.value,
