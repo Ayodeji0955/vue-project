@@ -12,8 +12,9 @@ import axios from "axios"
 const user = ref();
 
 onMounted(async () => {
-// get token from
+// getToken from
   await getToken()
+// getUser
   const data = await axios.get('/users/current-user');
   user.value = data.data
   console.log(user.value);
