@@ -1,27 +1,30 @@
 <template>
     <div class="dashboard">
         <DashNav />
+        <div v-if="authStore.user">
+            <h1>{{ authStore.user.name }}</h1>
+            <h2> {{ authStore.user.email }}</h2>
+        </div>
+        <div v-else>
+            <h1>Go and Log In</h1>
+        </div>
     </div>
 </template>
 
 <script setup lang="ts">
 import DashNav from '../dashboard/DashNav.vue'
-import { ref, onMounted } from "vue"
-import axios from "axios"
+import { onMounted } from "vue"
+import { useAuthStore } from "@/stores/auth"
 
-const user = ref();
+
+const authStore = useAuthStore()
+
 
 onMounted(async () => {
-// getToken from
-  await getToken()
-// getUser
-  const data = await axios.get('/users/current-user');
-  user.value = data.data
-  console.log(user.value);
+    await authStore.getUser()
+
 })
-const getToken = async() => {
-    await axios.get('/sanctum/csrf-cookie')
-}
+
 </script>
 
 <style lang="scss" scoped>
