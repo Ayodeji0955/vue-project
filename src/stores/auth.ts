@@ -7,7 +7,7 @@ export const useAuthStore = defineStore( "authStore", {
     authUser: null,
   }),
   getters: {
-    user:(state) => state.authUser
+    user: (state) => state.authUser,
   },
   actions: {
     async getToken() {
