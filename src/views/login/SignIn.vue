@@ -13,7 +13,7 @@
                   Welcome Back!
                 </h1>
                 <span class="padding-bottom--15 text-center">Kindly input your details to access your account. </span>
-                <form id="stripe-login" @submit.prevent="onSubmit">
+                <form id="stripe-login" @submit.prevent="authStore.onSubmit(form)">
                   <div class="field padding-bottom--24">
                     <label 
                       for="email"
@@ -72,24 +72,17 @@
 
 <script setup lang="ts">
 import { ref } from "vue"
-import axios from "axios"
-import { useRouter } from "vue-router"
+import { useAuthStore } from "@/stores/auth"
 
 
-const router = useRouter()
+
+const authStore = useAuthStore()
 const form = ref({
   email: '', 
   password: ''
 })
 
-const onSubmit = async () => {
-  await axios.post('/auth/login', {
-    email: form.value.email,
-    password: form.value.password
-  })
-  router.push('/dashboard')
-  console.log (form)
-}
+
 
 </script>
   

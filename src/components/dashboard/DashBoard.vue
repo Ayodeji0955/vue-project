@@ -13,12 +13,17 @@
 
 <script setup lang="ts">
 import DashNav from '../dashboard/DashNav.vue'
+// import { ref } from "vue"
 import { onMounted } from "vue"
 import { useAuthStore } from "@/stores/auth"
 
 
 const authStore = useAuthStore()
 
+// const form = ref({
+//   email: '', 
+//   password: ''
+// })
 
 onMounted(async () => {
     await authStore.getUser()
