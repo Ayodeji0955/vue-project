@@ -38,7 +38,7 @@ onMounted(async () => {
 
 
 .dashboard {
-    background-color: red;
+    background-color: #FBFAFF;
     height: 100vh;
     
 }
