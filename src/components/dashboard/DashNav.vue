@@ -1,40 +1,54 @@
 <template>
-    <div class="dash-nav">
-        <nav class="navbar sticky-top bg-body-tertiary">
-            <div class="container-fluid">
-                <div class=" dash-nav__nav-img">
-                    <img src="~@/assets/images/img_1/favicon.png" class="dash-nav__nav-img--img">
-                </div>
-                <form class="d-flex" role="search">
-                    <a class="navbar-brand">Learning hub</a>
-                    <a class="navbar-brand">Resources hub</a>
-                    <a class="navbar-brand">Events</a>
-                    <a class="navbar-brand">Services</a>
-                    <img src="~@/assets/images/img_1/eclipse.jpg" class="dash-nav__dropdown--img">
-                    <a class="nav-link dropdown-toggle dash-nav__dropdown" data-bs-toggle="dropdown" href="#" role="button">
-                        <a class="dropdown-item" href="#">Action</a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid navbar__container">
+            <ul class="navbar-nav navbar__nav">
+                <li class="nav-item navbar__nav-item">
+                    <a class="nav-link navbar__nav-link" href="#">
+                        <img src="~@/assets/images/img_1/logo.png" alt="Logo" class="navbar__img">
                     </a>
-                    <li class="nav-item dropdown">
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </form>
-            </div>
-        </nav>
-    </div>
+                </li>
+            </ul>
+            <form class="d-flex navbar__form" role="search">
+                <div class="collapse navbar-collapse navbar__collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="navbar__nav-item pt-3 px-2">
+                            <a class="nav-link navbar__nav-item--active" aria-current="page" href="#">Learning Hub</a>
+                        </li>
+                        <li class="navbar__nav-item pt-3 px-2">
+                            <a class="nav-link navbar__nav-item--active" href="#">Resources Hub</a>
+                        </li>
+                        <li class="navbar__nav-item pt-3 px-2">
+                            <a class="nav-link navbar__nav-item--active" href="#">Events</a>
+                        </li>
+                        <li class="navbar__nav-item pt-3 px-2">
+                            <a class="nav-link navbar__nav-item--active" aria-current="page" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown pt-2 px-2">
+                            <a class="nav-link dropdown-toggle navbar__toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-bell  navbar__toggle--bell"></i>
+                            </a>
+                            <ul class="dropdown-menu navbar__menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-link pt-4 navbar__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../assets/img_1/account.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                        </li>
+                        <li class="navbar__nav-item dropdown pt-2 px-1">
+                            <a class="nav-link navbar__nav-item--active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Olivia Clark</a>
+                            <ul class="dropdown-menu px-2">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </nav>
 </template>
 
 <script setup lang="ts">
@@ -46,48 +60,19 @@
 @import "@/sass/mixin.scss";
 
 
-.dash-nav {
-    background-color: blueviolet;
+.navbar {
+    background-color: white;
     // padding: 0.5rem 2rem;
+     
+    &__img {
+        width: 50%;
+        height: 50%;
+    }
     
-
-    &__nav-img {
-        &--img {
-            width: 2.17119rem; 
-            // height: 2.17119rem;
-        }
-    }
-
-    &__dropdown {
-        &--img {
-            width: 2.17119rem; 
-            height: 2.17119rem;
-        }
-    }
 }
 
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-//   width: 100%;
-}
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
 
 
 </style>

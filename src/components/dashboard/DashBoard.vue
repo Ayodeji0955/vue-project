@@ -2,8 +2,8 @@
     <div class="dashboard">
         <DashNav />
         <div v-if="authStore.user">
-            <h1>{{ authStore.user.name }}</h1>
-            <h2> {{ authStore.user.email }}</h2>
+            <h1>{{ authStore }}</h1>
+            <h2> {{ authStore}}</h2>
         </div>
         <div v-else>
             <h1>Go and Log In</h1>
