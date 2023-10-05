@@ -65,6 +65,9 @@
     background: var(--solid-white, #FFF);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
     padding: 1rem 2.5rem;
+
+    margin-bottom: 0;
+    border-radius: 0;
      
     &__img {
         width: 50%;

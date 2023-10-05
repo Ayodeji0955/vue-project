@@ -47,6 +47,7 @@ onMounted(async () => {
 
     &--mid-side {
         background-color: green;
+        padding-top: 4rem 0;
     }
     
 }
