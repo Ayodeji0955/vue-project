@@ -1,6 +1,9 @@
 <template>
     <div class="dashboard">
         <DashNav />
+        <div class="dashboard__mid-side">
+            <SideBar />
+        </div>
         <div v-if="authStore.user">
             <h1>{{ authStore }}</h1>
             <h2> {{ authStore}}</h2>
@@ -13,6 +16,7 @@
 
 <script setup lang="ts">
 import DashNav from '../dashboard/DashNav.vue'
+import SideBar from '../dashboard/SideBar.vue'
 // import { ref } from "vue"
 import { onMounted } from "vue"
 import { useAuthStore } from "@/stores/auth"
@@ -40,6 +44,10 @@ onMounted(async () => {
 .dashboard {
     background-color: #FBFAFF;
     height: 100vh;
+
+    &--mid-side {
+        background-color: green;
+    }
     
 }
 </style>
