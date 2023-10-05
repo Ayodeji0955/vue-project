@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid navbar__container">
             <ul class="navbar-nav navbar__nav">
                 <li class="nav-item navbar__nav-item">
