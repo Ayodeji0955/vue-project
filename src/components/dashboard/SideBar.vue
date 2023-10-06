@@ -3,29 +3,26 @@
         <div class="container-fluid text-center sidebar__container">    
             <div class="row sidebar__content">
                 <div class="col-sm-2 sidebar__sidenav">
-                    <div class="row">
-                        <div class="col">
-
+                    <div class="row pt-4">
+                        <div class="col-md-12 sidebar__col">
+                            <p class="sidebar__col--btn">Dashboard</p>
                         </div>
-                        <div class="col">
-
+                        <div class="col-md-12 sidebar__col">
+                            <p class="sidebar__col--btn">Learning Hub</p>    
                         </div>
-                        <div class="col">
-
+                        <div class="col-md-12 sidebar__col">
+                            <p class="sidebar__col--btn">Resource Hub</p>    
                         </div>
-                        <div class="col">
-
+                        <div class="sidebar__col">
+                            <p class="sidebar__col--btn">Profile </p>
                         </div>
-                        <div class="col">
-                            
+                        <div class="col-md-12 sidebar__col">
+                            <p class="sidebar__col--btn">Communities</p>    
+                        </div>
+                        <div class="col-md-12 sidebar__col">
+                            <p class="sidebar__col--btn">Messages</p>   
                         </div>
                     </div>
-                        <p><a href="#">Dashboard</a></p>
-                        <p><a href="#">Learning Hub</a></p>
-                        <p><a href="#">Resource Hub</a></p>
-                        <p><a href="#">Profile </a></p>
-                        <p><a href="#">Communities</a></p>
-                        <p><a href="#">Messages</a></p>
                     </div>
                     <div class="col-sm-8 text-left"> 
                         <h1>Welcome</h1>
@@ -79,6 +76,21 @@
 
     &__content {
         height: 450px
+    }
+
+    &__col {
+            display: flex;
+            width: 13.75rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.625rem;
+        
+        &--btn:hover {
+            padding: 0.75rem 5rem 0.75rem 1.25rem;
+            border-radius: 0.3125rem 0.9375rem 0.9375rem 0.3125rem;
+            background: #F8F5FF;
+        }
     }
 }
 
