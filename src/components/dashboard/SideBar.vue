@@ -3,7 +3,7 @@
         <div class="container-fluid text-center sidebar__container">    
             <div class="row sidebar__content">
                 <div class="col-sm-2 sidebar__sidenav">
-                    <div class="row pt-4">
+                    <div class="row pt-4 px-4">
                         <div class="col-md-12 sidebar__col">
                             <p class="sidebar__col--btn">Dashboard</p>
                         </div>
@@ -24,14 +24,9 @@
                         </div>
                     </div>
                     </div>
-                    <div class="col-sm-8 text-left"> 
-                        <h1>Welcome</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                            
-                            </p>
-                        <hr>
-                        <h3>Test</h3>
-                        <p>Lorem ipsum...</p>
+                    <div class="col-sm-8 text-rigth"> 
+                        <CenterPage />
+                        <CoursesProgress />
                     </div>
                     <div class="col-sm-2 sidenav">
                         <div class="well">
@@ -47,8 +42,8 @@
 </template>
 
 <script setup lang="ts">
-
-
+import CenterPage from '../dashboard/CenterPage.vue'
+import CoursesProgress from '../dashboard/CoursesProgress.vue'
 </script>
 
 <style lang="scss" scoped>
@@ -79,20 +74,39 @@
     }
 
     &__col {
-            display: flex;
-            width: 13.75rem;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 0.625rem;
+        display: flex;
+        // width: 13.75rem;
+        padding: 0.75rem 5rem 0.75rem 1.25rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        padding: 0.625rem ;
+           
+            
         
         &--btn:hover {
             padding: 0.75rem 5rem 0.75rem 1.25rem;
+            // border-radius: 0.3125rem 0.9375rem 0.9375rem 0.3125rem;
+            // background: #F8F5FF;
+            color: #5A27D5;
             border-radius: 0.3125rem 0.9375rem 0.9375rem 0.3125rem;
-            background: #F8F5FF;
+            background: var(--primary-light, #F8F5FF);
+        }
+
+        &--btn {
+            color: var(--text-black-2, #7E848E);
+            text-align: center;
+            font-family: Inter;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.25rem; /* 125% */
+            text-transform: capitalize;
         }
     }
 }
+
 
 
 .row.content {
