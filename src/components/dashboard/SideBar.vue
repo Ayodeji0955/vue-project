@@ -3,9 +3,29 @@
         <div class="container-fluid text-center sidebar__container">    
             <div class="row sidebar__content">
                 <div class="col-sm-2 sidebar__sidenav">
-                        <p><a href="#">Link</a></p>
-                        <p><a href="#">Link</a></p>
-                        <p><a href="#">Link</a></p>
+                    <div class="row">
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+                            
+                        </div>
+                    </div>
+                        <p><a href="#">Dashboard</a></p>
+                        <p><a href="#">Learning Hub</a></p>
+                        <p><a href="#">Resource Hub</a></p>
+                        <p><a href="#">Profile </a></p>
+                        <p><a href="#">Communities</a></p>
+                        <p><a href="#">Messages</a></p>
                     </div>
                     <div class="col-sm-8 text-left"> 
                         <h1>Welcome</h1>
@@ -51,7 +71,7 @@
         display: flex;
         width: 18.3125rem;
         height: 58.8125rem;
-        padding: 3rem 2.9375rem 35.625rem 0.1875rem;
+        padding: 3rem 2.9375rem;
         flex-direction: column;
         align-items: center;
         flex-shrink: 0;
