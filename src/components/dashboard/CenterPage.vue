@@ -1,5 +1,5 @@
 <template>
-    <div class="center-page">
+    <div class="center-page pb-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">

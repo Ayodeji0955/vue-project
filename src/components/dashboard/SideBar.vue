@@ -1,6 +1,6 @@
 <template>
-    <div class="sidebar">
-        <div class="container-fluid text-center sidebar__container">    
+    <div class="sidebar ">
+        <div class="container-fluid sidebar__container">    
             <div class="row sidebar__content">
                 <div class="col-sm-2 sidebar__sidenav">
                     <div class="row pt-4 px-4">
@@ -23,15 +23,15 @@
                             <p class="sidebar__col--btn">Messages</p>   
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-8"> 
+                    <CenterPage />
+                    <CoursesProgress />
+                </div>
+                <div class="col-sm-2 sidenav">
+                    <div class="well">
+                        <p>ADS</p>
                     </div>
-                    <div class="col-sm-8 text-rigth"> 
-                        <CenterPage />
-                        <CoursesProgress />
-                    </div>
-                    <div class="col-sm-2 sidenav">
-                        <div class="well">
-                            <p>ADS</p>
-                        </div>
                     <div class="well">
                         <p>ADS</p>
                     </div>
