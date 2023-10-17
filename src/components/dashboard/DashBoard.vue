@@ -1,16 +1,13 @@
 <template>
     <div class="dashboard">
         <DashNav />
-        <div class="dashboard__mid-side">
+        <div class="dashboard__mid-side pt-4">
             <SideBar />
         </div>
-        <div v-if="authStore.user">
+        <!-- <div v-if="authStore.user">
             <h1>{{ authStore }}</h1>
             <h2> {{ authStore}}</h2>
-        </div>
-        <div v-else>
-            <h1>Go and Log In</h1>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -18,20 +15,20 @@
 import DashNav from '../dashboard/DashNav.vue'
 import SideBar from '../dashboard/SideBar.vue'
 // import { ref } from "vue"
-import { onMounted } from "vue"
-import { useAuthStore } from "@/stores/auth"
+// import { onMounted } from "vue"
+// import { useAuthStore } from "@/stores/auth"
 
 
-const authStore = useAuthStore()
+// const authStore = useAuthStore()
 
 // const form = ref({
 //   email: '', 
 //   password: ''
 // })
 
-onMounted(async () => {
-    await authStore.getUser()
-})
+// onMounted(async () => {
+//     await authStore.getUser()
+// })
 
 </script>
 

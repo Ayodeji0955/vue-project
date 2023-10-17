@@ -24,9 +24,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8"> 
+                <div class="col-sm-8 sidebar__main"> 
                     <CenterPage />
                     <CoursesProgress />
+                    <CoachingSession />
                 </div>
                 <div class="col-sm-2 sidenav">
                     <div class="well">
@@ -44,6 +45,7 @@
 <script setup lang="ts">
 import CenterPage from '../dashboard/CenterPage.vue'
 import CoursesProgress from '../dashboard/CoursesProgress.vue'
+import CoachingSession from './CoachingSession.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -104,6 +106,10 @@ import CoursesProgress from '../dashboard/CoursesProgress.vue'
             line-height: 1.25rem; /* 125% */
             text-transform: capitalize;
         }
+    }
+
+    &__main {
+        padding: 3rem 2.9375rem;
     }
 }
 
