@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar ">
+    <div class="sidebar">
         <div class="container-fluid sidebar__container">    
             <div class="row sidebar__content">
                 <div class="col-sm-2 sidebar__sidenav">
@@ -29,7 +29,7 @@
                     <CoursesProgress />
                     <CoachingSession />
                 </div>
-                <div class="col-sm-2 sidenav">
+                <div class="col-sm-2 sidebar__sidenav fixed">
                     <div class="well">
                         <p>ADS</p>
                     </div>
@@ -61,14 +61,16 @@ import CoachingSession from './CoachingSession.vue';
     }
 
     &__sidenav {
-        background: var(--solid-white, #FFF);
+        // background: var(--solid-white, #FFF);
+        background-color: #5A27D5;
         display: flex;
-        width: 18.3125rem;
+        // width: 18.3125rem;
         height: 58.8125rem;
         padding: 3rem 2.9375rem;
         flex-direction: column;
         align-items: center;
         flex-shrink: 0;
+        
     }
 
     &__content {
@@ -109,7 +111,7 @@ import CoachingSession from './CoachingSession.vue';
     }
 
     &__main {
-        padding: 3rem 2.9375rem;
+        padding: .5rem 0;
     }
 }
 
