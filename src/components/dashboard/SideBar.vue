@@ -64,7 +64,6 @@ import CoachingSession from './CoachingSession.vue';
         // background: var(--solid-white, #FFF);
         background-color: #5A27D5;
         display: flex;
-        // width: 18.3125rem;
         height: 58.8125rem;
         padding: 3rem 2.9375rem;
         flex-direction: column;
@@ -121,20 +120,7 @@ import CoachingSession from './CoachingSession.vue';
     height: 450px
 }
 
-// .container-fluid {
-//     padding: 4rem 0;
-//     background: #FBFAFF;
-// }
-// .sidenav {
-//     background: var(--solid-white, #FFF);
-//     display: flex;
-//     width: 18.3125rem;
-//     height: 58.8125rem;
-//     padding: 3rem 2.9375rem 35.625rem 0.1875rem;
-//     flex-direction: column;
-//     align-items: center;
-//     flex-shrink: 0;
-// }
+
     
 @media screen and (max-width: 767px) {
     .sidenav {

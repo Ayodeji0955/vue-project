@@ -52,10 +52,12 @@
 
 
 .center-page {
-    padding: 1rem .4rem;
+    padding: 1rem 1.5rem;
     background-color: aqua;
+
     &__container {
         padding: 3rem 0rem;
+        background-color: red;
     }
 
     &__main-row {
@@ -73,7 +75,6 @@
     &__main-col {
         display: flex;
         align-items: center;
-        
         margin: 0 0rem;
         background: #FFF;
     }

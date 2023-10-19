@@ -1,12 +1,12 @@
 <template>
     <div class="coaching-session">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h1>leter</h1>
                 </div>
-                <div class="col-md-4">
-                    
+                <div class="col-md-6">
+                    <h1>letter</h1>
                 </div>
             </div>
         </div>
@@ -20,14 +20,12 @@
 @import "@/sass/variable.scss";
 @import "@/sass/mixin.scss";
 
-// .coaching-session {
-//     display: inline-flex;
-//     padding: 1.4375rem 1.6875rem 0rem 1.5625rem;
-//     flex-direction: column;
-//     justify-content: flex-end;
-//     align-items: flex-start;
-//     gap: 1.25rem;
-// }
+.coaching-session {
+    // background: #FFF;
+    padding: 2rem 3rem;
+    background-color: aqua;
+    box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
+}
 
 </style>
   

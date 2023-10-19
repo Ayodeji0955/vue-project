@@ -1,9 +1,9 @@
 <template>
     <div class="courses">
-        <div class="container">
+        <div class="container courses__container">
             <div class="row justify-content-center courses__main ">
                 <div class="col-md-4 courses__sub-col">
-                    <div class="card h-100" style="width: 18rem;">
+                    <div class="card h-100" style="max-width: 18rem;">
                         <img src="~@/assets/images/card/frame_1.png" alt="Logo" class="navbar__img">
                     <div class="card-body">
                         <h5 class="card-title">Understanding your target customers</h5>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 courses__sub-col">
-                    <div class="card h-100" style="width: 18rem;">
+                    <div class="card h-100" style="max-width: 18rem;">
                         <img src="~@/assets/images/card/frame_2.png" alt="Logo" class="navbar__img">
                     <div class="card-body">
                         <h5 class="card-title">Understanding your target customers</h5>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 courses__sub-col">
-                    <div class="card h-100" style="width: 18rem;">
+                    <div class="card h-100" style="max-width: 18rem;">
                         <img src="~@/assets/images/card/frame_3.png" alt="Logo" class="navbar__img">
                     <div class="card-body">
                         <h5 class="card-title">Understanding your target customers</h5>
@@ -78,15 +78,21 @@
 
 
 .courses {
+    background-color: aquamarine;
+    padding: 1rem 1.5rem;
+
+    &__container {
+        background-color: red;
+    }
 
     &__main {
         background-color: blue;
-        padding: 4rem .5rem;
+        padding: 4rem 0rem;
+        box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
     }
 
     &__sub-col {
          padding: 0.8125rem 1.5625rem 1.375rem 1.125rem;
-        box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
     }
 }
 
