@@ -80,22 +80,13 @@
 .courses {
 
     &__main {
-        // padding: 0.8125rem 1.5625rem 1.375rem 1.125rem;
-        // padding: 3rem 3rem;
-        // background: var(--solid-white, #FFF);
         background-color: blue;
         padding: 4rem .5rem;
-        // box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
-
-        // display: flex;
-        // align-items: center;
-
     }
 
     &__sub-col {
-        //  background-color: red;
          padding: 0.8125rem 1.5625rem 1.375rem 1.125rem;
-        // box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
+        box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
     }
 }
 

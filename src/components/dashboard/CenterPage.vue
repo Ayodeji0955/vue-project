@@ -4,10 +4,10 @@
             <div class="row justify-content-evenly center-page__main-row">
                 <div class="col-md-4">
                     <div class="row center-page__sub-row" >
-                        <div class="col-md-4 center-page__main-col" >
+                        <div class="col-md-6 center-page__main-col" >
                             <img src="~@/assets/images/dashboard/checkbox.png" alt="Logo" class="navbar__img">
                         </div>
-                        <div class="col-md-4 center-page__sub-col" >
+                        <div class="col-md-6 center-page__sub-col" >
                             <p>Completed courses</p>
                             <h1>27</h1>
                         </div>
@@ -15,10 +15,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="row center-page__sub-row">
-                        <div class="col-md-4 center-page__main-col">
+                        <div class="col-md-6 center-page__main-col">
                             <img src="~@/assets/images/dashboard/red.png" alt="Logo" class="navbar__img">
                         </div>
-                        <div class="col-md-4 center-page__sub-col">
+                        <div class="col-md-6 center-page__sub-col">
                             <p>Courses in progress</p>
                             <h1>4</h1>
                         </div>
@@ -26,10 +26,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="row center-page__sub-row">
-                        <div class="col-md-4 center-page__main-col">
+                        <div class="col-md-6 center-page__main-col">
                             <img src="~@/assets/images/dashboard/blue.png" alt="Logo" class="navbar__img">
                         </div>
-                        <div class="col-md-4 center-page__sub-col">
+                        <div class="col-md-6 center-page__sub-col">
                             <p>Total communities</p>
                             <h1>6</h1>
                         </div>

@@ -20,14 +20,14 @@
 @import "@/sass/variable.scss";
 @import "@/sass/mixin.scss";
 
-.coaching-session {
-    display: inline-flex;
-    padding: 1.4375rem 1.6875rem 0rem 1.5625rem;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 1.25rem;
-}
+// .coaching-session {
+//     display: inline-flex;
+//     padding: 1.4375rem 1.6875rem 0rem 1.5625rem;
+//     flex-direction: column;
+//     justify-content: flex-end;
+//     align-items: flex-start;
+//     gap: 1.25rem;
+// }
 
 </style>
   
