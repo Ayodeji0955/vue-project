@@ -54,7 +54,8 @@ import CoachingSession from './CoachingSession.vue';
 
 
 .sidebar {
-
+    background-color: #FBFAFF;
+    
     &__container {
         padding: 4rem 0;
         background: #FBFAFF;

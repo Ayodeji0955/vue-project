@@ -1,7 +1,18 @@
 <template>
     <div class="courses">
         <div class="container courses__container">
-            <div class="row justify-content-center courses__main ">
+            <div class="row">
+            </div>
+            <div class="row justify-content-center courses__main">
+                <div class="col-md-10">
+                    <h1>Courses in progress</h1>
+                </div>
+                <div class="col-md-2 align-self-end">
+                    <div class="pagination">
+                      <a href="#" class="next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">❮</a>
+                      <a href="#" class="prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">❯</a>
+                    </div>
+                </div>
                 <div class="col-md-4 courses__sub-col">
                     <div class="card h-100" style="max-width: 18rem;">
                         <img src="~@/assets/images/card/frame_1.png" alt="Logo" class="navbar__img">
@@ -78,7 +89,6 @@
 
 
 .courses {
-    background-color: aquamarine;
     padding: 1rem 1.5rem;
 
     &__container {
@@ -86,15 +96,49 @@
     }
 
     &__main {
-        background-color: blue;
         padding: 4rem 0rem;
+        background: var(--solid-white, #FFF);
         box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
     }
 
     &__sub-col {
          padding: 0.8125rem 1.5625rem 1.375rem 1.125rem;
+         width: 30%;
     }
 }
 
+
+.pagination a {
+    background-color: white;
+    float: left;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    border-radius: 30px 30px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 3px 10px 2px #0640b41a;
+}
+.pagination :hover {
+    background-color: #FF9E01;
+    color: white;
+}
+.pagination .next{
+    margin-right: 1.5rem;
+}
+
+
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .courses {
+        
+        &__sub-col {
+            padding: 0.8125rem 1.5625rem 1.375rem 1.125rem;
+        }  
+    }
+}
 </style>
   
