@@ -1,16 +1,18 @@
 <template>
     <div class="courses">
         <div class="container courses__container">
-            <div class="row">
-            </div>
             <div class="row justify-content-center courses__main">
-                <div class="col-md-10">
-                    <h1>Courses in progress</h1>
-                </div>
-                <div class="col-md-2 align-self-end">
-                    <div class="pagination">
-                      <a href="#" class="next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">❮</a>
-                      <a href="#" class="prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">❯</a>
+                <div class="col-md-12">
+                    <div class="row justify-content-between px-7">
+                        <div class="col-md-6">
+                            <h1>Courses in progress</h1>
+                        </div>
+                        <div class="col-md-2 ">
+                            <div class="pagination">
+                              <a href="#" class="next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">❮</a>
+                              <a href="#" class="prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">❯</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 courses__sub-col">
@@ -28,6 +30,7 @@
                             </div>
                             <div class="col-md-6">
                                 <p>37%</p>
+                                <p>Rate this course</p>
                             </div>
                         </div>
                     </div>
@@ -48,6 +51,7 @@
                             </div>
                             <div class="col-md-6">
                                 <p>37%</p>
+                                <p>Rate this course</p>
                             </div>
                         </div>
                     </div>
@@ -68,6 +72,7 @@
                             </div>
                             <div class="col-md-6">
                                 <p>37%</p>
+                                <p>Rate this course</p>
                             </div>
                         </div>
                     </div>
@@ -91,9 +96,7 @@
 .courses {
     padding: 1rem 1.5rem;
 
-    &__container {
-        background-color: red;
-    }
+ 
 
     &__main {
         padding: 4rem 0rem;
@@ -121,13 +124,12 @@
     box-shadow: 0px 3px 10px 2px #0640b41a;
 }
 .pagination :hover {
-    background-color: #FF9E01;
+    background: var(--linear-cta-primary, linear-gradient(91deg, #5A27D5 0%, #5F27D3 32.36%, #AD2EC4 100%));
     color: white;
 }
 .pagination .next{
     margin-right: 1.5rem;
 }
-
 
 
 
@@ -137,6 +139,7 @@
         
         &__sub-col {
             padding: 0.8125rem 1.5625rem 1.375rem 1.125rem;
+            width: 100%
         }  
     }
 }
