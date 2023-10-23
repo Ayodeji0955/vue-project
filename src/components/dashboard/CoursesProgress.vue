@@ -22,15 +22,15 @@
                             <h5 class="card-title">Understanding your target customers</h5>
                             <p class="card-text">Venture Nation</p>
                             <div class="row">
-                                <div class="progress col-md-10" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress col-md-10 courses__progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                     <div class="progress-bar text-bg-warning" style="width: 45%">75%</div>
                                 </div>
                                 <div class="col-md-6">
                                     <p>Your progress</p>
                                 </div>
-                                <div class="col-md-6">
-                                    <p>37%</p>
-                                    <p>Rate this course</p>
+                                <div class="col-md-6 courses__col">
+                                    <p class="courses__col--txt">37%</p>
+                                    <p class="courses__col--sub-txt">Rate this course</p>
                                 </div>
                             </div>
                         </div>
@@ -42,16 +42,16 @@
                         <div class="card-body">
                             <h5 class="card-title">Understanding your target customers</h5>
                             <p class="card-text">Venture Nation</p>
-                            <div class="row">
-                                <div class="progress col-md-10" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar text-bg-warning" style="width: 50%">75%</div>
-                                </div>
+                            <div class="progress col-md-10 courses__progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar text-bg-warning" style="width: 50%">75%</div>
+                            </div>
+                            <div class="row justify-content-between">
                                 <div class="col-md-6">
                                     <p>Your progress</p>
                                 </div>
-                                <div class="col-md-6">
-                                    <p>37%</p>
-                                    <p>Rate this course</p>
+                                <div class="col-md-6 courses__col">
+                                    <p class="courses__col--txt">37%</p>
+                                    <p class="courses__col--sub-txt">Rate this course</p>
                                 </div>
                             </div>
                         </div>
@@ -64,15 +64,15 @@
                             <h5 class="card-title">Understanding your target customers</h5>
                             <p class="card-text">Venture Nation</p>
                             <div class="row">
-                                <div class="progress col-md-12" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress col-md-12 courses__progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                     <div class="progress-bar text-bg-warning" style="width: 25%">75%</div>
                                 </div>
                                 <div class="col-md-6">
                                     <p>Your progress</p>
                                 </div>
-                                <div class="col-md-6">
-                                    <p>37%</p>
-                                    <p>Rate this course</p>
+                                <div class="col-md-6 courses__col">
+                                    <p class="courses__col--txt">37%</p>
+                                    <p class="courses__col--sub-txt">Rate this course</p>
                                 </div>
                             </div>
                         </div>
@@ -110,20 +110,32 @@
     }
     
     &__card {
-        // background-color: red;
         padding: 0.2rem 0.2rem;
         border-radius: 0.3125rem;
-        // background: #FFF;
-        // box-shadow: 0px 0px 42.13974px -4.21397px rgba(0, 0, 0, 0.06);
         background: #FFF;
-
-/* TE */
-box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
+        box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
     }
 
     &__img {
         padding-bottom: 0.5rem;
         border-radius: 0rem;
+    }
+
+    &__progress {
+        width: 18.25rem;
+        height: 0.41069rem;
+        // flex-shrink: 0;
+    }
+
+    &__col {
+
+        &--txt {
+            text-align: right;
+        }
+
+        &--sub-txt {
+            text-align: right;
+        }
     }
 }
 
