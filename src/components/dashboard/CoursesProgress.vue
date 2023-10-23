@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 courses__sub-col">
-                    <div class="card courses__card-body">
+                    <div class="card courses__card">
                         <img src="~@/assets/images/card/frame_1.png" alt="Logo" class="navbar__img">
                         <div class="card-body">
                             <h5 class="card-title">Understanding your target customers</h5>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 courses__sub-col">
-                    <div class="card courses__card-body">
+                    <div class="card courses__card">
                         <img src="~@/assets/images/card/frame_2.png" alt="Logo" class="navbar__img">
                         <div class="card-body">
                             <h5 class="card-title">Understanding your target customers</h5>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 courses__sub-col">
-                    <div class="card courses__card-body">
+                    <div class="card courses__card">
                         <img src="~@/assets/images/card/frame_3.png" alt="Logo" class="navbar__img">
                         <div class="card-body">
                             <h5 class="card-title">Understanding your target customers</h5>
@@ -105,17 +105,25 @@
     }
 
     &__sub-col {
-        padding: 0.8125rem 1.5625rem 1.375rem 1.125rem;
         width: 30%;
+        padding: 0.8125rem 1.5625rem 1.375rem 1.125rem;
     }
     
-    &__card-body {
+    &__card {
+        background-color: red;
+        padding: 0.2rem 0.2rem;
         border-radius: 0.3125rem;
         background: #FFF;
         box-shadow: 0px 0px 42.13974px -4.21397px rgba(0, 0, 0, 0.06);
 
     }
+
+    &__img {
+        padding-bottom: 0.5rem;
+        border-radius: 0rem;
+    }
 }
+
 
 
 .pagination a {
