@@ -110,12 +110,15 @@
     }
     
     &__card {
-        background-color: red;
+        // background-color: red;
         padding: 0.2rem 0.2rem;
         border-radius: 0.3125rem;
+        // background: #FFF;
+        // box-shadow: 0px 0px 42.13974px -4.21397px rgba(0, 0, 0, 0.06);
         background: #FFF;
-        box-shadow: 0px 0px 42.13974px -4.21397px rgba(0, 0, 0, 0.06);
 
+/* TE */
+box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
     }
 
     &__img {
