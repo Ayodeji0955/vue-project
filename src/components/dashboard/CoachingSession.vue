@@ -68,7 +68,8 @@
     }
 
     &__main-col {
-        background-color: red;
+        background: #FFF;
+        box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
         border-radius: 0.3125rem;
         border: 1px solid rgba(230, 230, 230, 0.30);
         padding: 0.8125rem 3rem 0.75rem 0.6875rem;
