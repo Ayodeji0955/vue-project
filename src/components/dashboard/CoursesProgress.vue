@@ -230,7 +230,15 @@
         &__sub-col {
             padding: 0.8125rem 1.5625rem 1.375rem 1.125rem;
             width: 100%
-        }  
+        }
+        
+        &__main-col {
+
+        &--header-txt {
+            padding-left: 0rem;
+        }
+
+        }
     }
 }
 </style>
