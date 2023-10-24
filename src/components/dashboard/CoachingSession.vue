@@ -6,29 +6,29 @@
                 <div class="col-md-5 coaching__main-col">
                     <h1 class="coaching__main-col--sub-header">Mentorship with Gilda Charles</h1>
                     <div class="row">
-                        <div class="col">Wed, Jun 28</div>
-                        <div class="col">Wed, Jun 28</div>
+                        <div class="col"><i class="fa-solid fa-calendar-days"></i> Wed, Jun 28</div>
+                        <div class="col">3:00 pm WAT</div>
                     </div>
                 </div>
                 <div class="col-md-5 coaching__main-col ">
                     <h1 class="coaching__main-col--sub-header">Mentorship with Travis Crosby</h1>
                     <div class="row">
-                        <div class="col">Wed, Jun 28</div>
-                        <div class="col">Wed, Jun 28</div>
+                        <div class="col"><i class="fa-solid fa-calendar-days"></i> Wed, Jun 28</div>
+                        <div class="col">3:00 pm WAT</div>
                     </div>
                 </div>
                 <div class="col-md-5 coaching__main-col">
                     <h1 class="coaching__main-col--sub-header">Mentorship with Gilda Charles</h1>
                     <div class="row">
-                        <div class="col">Wed, Jun 28</div>
-                        <div class="col">Wed, Jun 28</div>
+                        <div class="col"><i class="fa-solid fa-calendar-days"></i> Wed, Jun 28</div>
+                        <div class="col">3:00 pm WAT</div>
                     </div>
                 </div>
                 <div class="col-md-5 coaching__main-col">
                     <h1 class="coaching__main-col--sub-header">Mentorship with Travis Crosby</h1>
                     <div class="row">
-                        <div class="col">Wed, Jun 28</div>
-                        <div class="col">Wed, Jun 28</div>
+                        <div class="col"><i class="fa-solid fa-calendar-days"></i> Wed, Jun 28</div>
+                        <div class="col">3:00 pm WAT</div>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
         &--header-txt {
             color: var(--text-black, #404040);
             font-family: Inter;
-            font-size: 1.125rem;
+            font-size: 2.125rem;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
@@ -68,11 +68,16 @@
     }
 
     &__main-col {
+        background-color: red;
+        border-radius: 0.3125rem;
+        border: 1px solid rgba(230, 230, 230, 0.30);
+        padding: 0.8125rem 3rem 0.75rem 0.6875rem;
+        margin: 0.5rem 0rem;
 
         &--sub-header {
             color: var(--text-black, #404040);
             font-family: Inter;
-            font-size: 0.875rem;
+            font-size: 0.975rem;
             font-style: normal;
             font-weight: 400;
             line-height: 1.25rem; 
