@@ -7,28 +7,28 @@
                     <h1 class="coaching__main-col--sub-header">Mentorship with Gilda Charles</h1>
                     <div class="row">
                         <div class="col"><i class="fa-solid fa-calendar-days"></i> Wed, Jun 28</div>
-                        <div class="col">3:00 pm WAT</div>
+                        <div class="col"><i class="fa-regular fa-clock"></i> 3:00 pm WAT</div>
                     </div>
                 </div>
                 <div class="col-md-5 coaching__main-col ">
                     <h1 class="coaching__main-col--sub-header">Mentorship with Travis Crosby</h1>
                     <div class="row">
                         <div class="col"><i class="fa-solid fa-calendar-days"></i> Wed, Jun 28</div>
-                        <div class="col">3:00 pm WAT</div>
+                        <div class="col"><i class="fa-regular fa-clock"></i> 3:00 pm WAT</div>
                     </div>
                 </div>
                 <div class="col-md-5 coaching__main-col">
                     <h1 class="coaching__main-col--sub-header">Mentorship with Gilda Charles</h1>
                     <div class="row">
                         <div class="col"><i class="fa-solid fa-calendar-days"></i> Wed, Jun 28</div>
-                        <div class="col">3:00 pm WAT</div>
+                        <div class="col"><i class="fa-regular fa-clock"></i> 3:00 pm WAT</div>
                     </div>
                 </div>
                 <div class="col-md-5 coaching__main-col">
                     <h1 class="coaching__main-col--sub-header">Mentorship with Travis Crosby</h1>
                     <div class="row">
                         <div class="col"><i class="fa-solid fa-calendar-days"></i> Wed, Jun 28</div>
-                        <div class="col">3:00 pm WAT</div>
+                        <div class="col"><i class="fa-regular fa-clock"></i> 3:00 pm WAT</div>
                     </div>
                 </div>
             </div>
