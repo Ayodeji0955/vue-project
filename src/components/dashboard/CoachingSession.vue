@@ -1,12 +1,35 @@
 <template>
     <div class="coaching-session">
         <div class="container">
+            <h1>Coaching sessions</h1>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <h1>leter</h1>
+                    <h1>Mentorship with Gilda Charles</h1>
+                    <div class="row">
+                        <div class="col">Wed, Jun 28</div>
+                        <div class="col">Wed, Jun 28</div>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <h1>letter</h1>
+                    <h1>Mentorship with Gilda Charles</h1>
+                    <div class="row">
+                        <div class="col">Wed, Jun 28</div>
+                        <div class="col">Wed, Jun 28</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1>Mentorship with Gilda Charles</h1>
+                    <div class="row">
+                        <div class="col">Wed, Jun 28</div>
+                        <div class="col">Wed, Jun 28</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1>Mentorship with Gilda Charles</h1>
+                    <div class="row">
+                        <div class="col">Wed, Jun 28</div>
+                        <div class="col">Wed, Jun 28</div>
+                    </div>
                 </div>
             </div>
         </div>
