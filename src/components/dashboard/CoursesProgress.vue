@@ -100,7 +100,7 @@
         padding: 4rem 0rem;
         background: var(--solid-white, #FFF);
         box-shadow: 0px 0px 50px -5px rgba(0, 0, 0, 0.06);
-        text-align: center;
+       
 
     }
 
