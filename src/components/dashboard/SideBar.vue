@@ -29,7 +29,7 @@
                     <CoursesProgress />
                     <CoachingSession />
                 </div>
-                <div class="col-sm-2 sidebar__sidenav fixed pb-4">
+                <div class="col-sm-2 sidebar__sidenav fixed pb">
                     <RightNav/>
                 </div>
             </div>
@@ -63,7 +63,7 @@ import RightNav from '../dashboard/RightNav.vue';
         // background-color: #5A27D5;
         display: flex;
         height: 58.8125rem;
-        padding: 3rem 2.9375rem;
+        padding: 3rem 1rem;
         flex-direction: column;
         align-items: center;
         flex-shrink: 0;
