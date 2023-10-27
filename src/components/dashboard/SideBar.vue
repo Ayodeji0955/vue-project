@@ -29,13 +29,8 @@
                     <CoursesProgress />
                     <CoachingSession />
                 </div>
-                <div class="col-sm-2 sidebar__sidenav fixed">
-                    <div class="well">
-                        <p>ADS</p>
-                    </div>
-                    <div class="well">
-                        <p>ADS</p>
-                    </div>
+                <div class="col-sm-2 sidebar__sidenav fixed pb-4">
+                    <RightNav/>
                 </div>
             </div>
         </div>
@@ -46,6 +41,7 @@
 import CenterPage from '../dashboard/CenterPage.vue'
 import CoursesProgress from '../dashboard/CoursesProgress.vue'
 import CoachingSession from './CoachingSession.vue';
+import RightNav from '../dashboard/RightNav.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -55,15 +51,16 @@ import CoachingSession from './CoachingSession.vue';
 
 .sidebar {
     background-color: #FBFAFF;
-    
+
     &__container {
         padding: 4rem 0;
         background: #FBFAFF;
     }
 
     &__sidenav {
+        background-color: teal;
         // background: var(--solid-white, #FFF);
-        background-color: #5A27D5;
+        // background-color: #5A27D5;
         display: flex;
         height: 58.8125rem;
         padding: 3rem 2.9375rem;
