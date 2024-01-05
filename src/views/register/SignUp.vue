@@ -119,13 +119,12 @@ const password = ref("")
 
 
 const onSubmit = async () => {
-  await axios.post('register', {
+  const res = await axios.post('/auth/register', {
     name: name.value,
     email: email.value,
     password: password.value,
-    // password_confirmation: form.value.password_confirmation,
   })
-  
+  console.log(res)
   router.push('/confirm-email')
 }
 

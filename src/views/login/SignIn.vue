@@ -86,8 +86,13 @@ const onSubmit = async () => {
   const res = await axios.post('login', {
     email: email.value,
     password: password.value,
-  })
-    console.log(res);
+  }).then(
+      res => console.log(res),
+    )
+    .catch( 
+      err => console.log(err),
+  )
+  console.log(res)
 }
 
 </script>
