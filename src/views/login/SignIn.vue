@@ -83,7 +83,7 @@ const email = ref("")
 const password = ref("")
 
 const onSubmit = async () => {
-  const res = await axios.post('login', {
+  const res = await axios.post('/auth/login', {
     email: email.value,
     password: password.value,
   }).then(

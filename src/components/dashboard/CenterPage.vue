@@ -53,10 +53,11 @@
 
 .center-page {
     padding: 1rem 1.5rem;
+    margin-top: 0;
     // background-color: aqua;
 
     &__container {
-        padding: 3rem 0rem;
+        padding: 0rem 0rem;
         // background-color: red;
     }
 

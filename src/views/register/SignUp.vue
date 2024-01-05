@@ -125,7 +125,7 @@ const onSubmit = async () => {
     password: password.value,
   })
   console.log(res)
-  router.push('/confirm-email')
+    
 }
 
 

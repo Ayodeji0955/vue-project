@@ -39,6 +39,11 @@
             </div>
         </div>
     </div>
+    <div class="ventures">
+        <div class="">
+            <h1>Tolu</h1>
+        </div>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -53,6 +58,7 @@
 
 .right-nav {
     background-color: red;
+    padding-bottom: 2rem 0;
 
     &__container {
         padding: 2rem 0;
@@ -87,5 +93,9 @@
         }
     }
 
+}
+.ventures {
+    background-color: red;
+    margin-top: 2rem;
 }
 </style>
