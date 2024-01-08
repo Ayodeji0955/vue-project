@@ -38,7 +38,7 @@
                             <img src="~@/assets/images/img_1/eclipse.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
                         </li>
                         <li class="navbar__nav-item dropdown pt-3 px-1">
-                            <a class="nav-link navbar__nav-item--active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Olivia Clark</a>
+                            <a class="nav-link navbar__nav-item--active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" ></a>
                             <ul class="dropdown-menu px-2">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -53,7 +53,16 @@
 </template>
 
 <script setup lang="ts">
+// import axios from "axios"
+// import { ref } from "vue"
 
+
+// const user = ref(null)
+
+// const res = await axios.get('user')
+// console.log(res)
+
+//  user.value = res.data;
 </script>
 
 <style lang="scss" scoped>

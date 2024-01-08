@@ -78,23 +78,36 @@ import axios from "axios"
 
 // const router = useRouter()
 
-
 const email = ref("")
 const password = ref("")
 
-const onSubmit = async () => {
-  const res = await axios.post('/auth/login', {
-    email: email.value,
-    password: password.value,
-  }).then(
-      res => console.log(res),
-    )
-    .catch( 
-      err => console.log(err),
-  )
-  console.log(res)
-}
+// const onSubmit = async () => {
+//   const res = await axios.post('/auth/login', {
+//     email: email.value,
+//     password: password.value,
+//   }).then(
+//       res => console.log(res),
+//     )
+//     .catch( 
+//       err => console.log(err),
+//   )
+//   localStorage.setItem('token', res.data.token)
+//   console.log(res)
 
+// }
+
+const onSubmit = async () => {
+  try {
+    const res = await axios.post('/auth/login', {
+      email: email.value,
+      password: password.value,
+    });
+    console.log(res);
+    localStorage.setItem('token', res.data.token);
+  } catch (err) {
+    console.log(err);
+  }
+};
 </script>
   
 <style lang="scss" scoped>
