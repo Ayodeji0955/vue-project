@@ -102,8 +102,8 @@ const onSubmit = async () => {
       email: email.value,
       password: password.value,
     });
-    console.log(res);
     localStorage.setItem('token', res.data.token);
+    console.log(res);
   } catch (err) {
     console.log(err);
   }

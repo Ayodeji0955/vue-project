@@ -54,7 +54,7 @@
                             <h2 class="password-text">Password strength:</h2>
                           </div>
                           <div class="col-md-4 text-center">
-                            <h2 class="password-text">Weak</h2>
+                            <h2 class="password-text">Strong</h2>
                           </div>
                         </div>
                         <div class="np-password-strength-indicator-container">
